@@ -1,0 +1,5 @@
+- type: lobbyBackground
+  id: AuroraCaelus
+  background: /Textures/_Starlight/LobbyScreens/AuroraCaelus.webp
+  title: lobby-state-background-aeuroracaelus-title
+  artist: lobby-state-background-aeuroracaelus-artist

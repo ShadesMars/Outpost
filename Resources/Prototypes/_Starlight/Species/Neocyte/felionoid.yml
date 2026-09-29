@@ -1,7 +1,7 @@
 - type: species
   id: NeoFelionoid
   name: subspecies-name-neofelionoid
-  roundStart: true
+  roundStart: false
   prototype: MobNeoFelionoid
   sprites: MobNeoFelionoidSprites
   defaultSkinTone: "#666666"

@@ -1,7 +1,7 @@
 - type: species
   id: NeoResomi
   name: subspecies-name-neoresomi
-  roundStart: true
+  roundStart: false
   prototype: MobNeoResomi
   sprites: MobNeoResomiSprites
   defaultSkinTone: "#faf7f7"

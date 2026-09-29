@@ -1,7 +1,7 @@
 - type: species
   id: NeoVox
   name: subspecies-name-neovox
-  roundStart: true
+  roundStart: false
   prototype: MobNeoVox
   sprites: MobNeoVoxSprites
   defaultSkinTone: "#6c741d"

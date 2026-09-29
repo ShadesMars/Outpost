@@ -1,7 +1,7 @@
 - type: species
   id: NeoThaven
   name: subspecies-name-neothaven
-  roundStart: true
+  roundStart: false
   prototype: MobNeoThaven
   sprites: MobNeoThavenSprites
   defaultSkinTone: "#ffffff"

@@ -1,7 +1,7 @@
 - type: species
   id: NeoLagomorph
   name: subspecies-name-neolagomorph
-  roundStart: true
+  roundStart: false
   prototype: MobNeoLagomorph
   sprites: MobNeoLagomorphSprites
   defaultSkinTone: "#ffda93"

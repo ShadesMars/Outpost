@@ -1,7 +1,7 @@
 - type: species
   id: NeoCyclorite
   name: subspecies-name-neocyclorite
-  roundStart: true
+  roundStart: false
   prototype: MobNeoCyclorite
   sprites: MobNeoCycloriteSprites
   markingLimits: MobNeoCycloriteMarkingLimits

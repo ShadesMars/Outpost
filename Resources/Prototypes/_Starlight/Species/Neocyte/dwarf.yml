@@ -1,7 +1,7 @@
 - type: species
   id: NeoDwarf
   name: subspecies-name-neodwarf
-  roundStart: true
+  roundStart: false
   prototype: MobNeoDwarf
   sprites: MobNeoDwarfSprites
   markingLimits: MobNeoDwarfMarkingLimits

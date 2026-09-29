@@ -1,7 +1,7 @@
 - type: species
   id: NeoVulpkanin
   name: subspecies-name-neovulpkanin
-  roundStart: true
+  roundStart: false
   prototype: MobNeoVulpkanin
   sprites: MobNeoVulpkaninSprites
   defaultSkinTone: "#ffda93"

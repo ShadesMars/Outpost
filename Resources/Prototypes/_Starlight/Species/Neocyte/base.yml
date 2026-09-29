@@ -1,7 +1,7 @@
 - type: species
   id: Neocyte
   name: species-name-neocyte
-  roundStart: true
+  roundStart: false
   prototype: MobNeocyte
   sprites: MobNeocyteSprites
   defaultSkinTone: "#ffda93"

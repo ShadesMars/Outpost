@@ -1,7 +1,7 @@
 - type: species
   id: NeoKin
   name: subspecies-name-neokin
-  roundStart: true
+  roundStart: false
   prototype: MobNeoKin
   sprites: MobNeoKinSprites
   defaultSkinTone: "#ffffff"

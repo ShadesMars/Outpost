@@ -1,7 +1,7 @@
 - type: species
   id: NeoSlimePerson
   name: subspecies-name-neoslimeperson
-  roundStart: true
+  roundStart: false
   prototype: MobNeoSlimePerson
   sprites: MobNeoSlimePersonSprites
   defaultSkinTone: "#b8b8b8"

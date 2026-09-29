@@ -1,7 +1,7 @@
 - type: species
   id: NeoReptilian
   name: subspecies-name-neoreptilian
-  roundStart: true
+  roundStart: false
   prototype: MobNeoReptilian
   sprites: MobNeoReptilianSprites
   defaultSkinTone: "#faf7f7"

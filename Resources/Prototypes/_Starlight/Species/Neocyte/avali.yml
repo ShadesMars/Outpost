@@ -1,7 +1,7 @@
 - type: species
   id: NeoAvali
   name: subspecies-name-neoavali
-  roundStart: true
+  roundStart: false
   prototype: MobNeoAvali
   sprites: MobNeoAvaliSprites
   markingLimits: MobNeoAvaliMarkingLimits

@@ -1,7 +1,7 @@
 - type: species
   id: NeoHuman
   name: subspecies-name-neohuman
-  roundStart: true
+  roundStart: false
   prototype: MobNeoHuman
   sprites: MobNeoHumanSprites
   defaultSkinTone: "#ffda93"

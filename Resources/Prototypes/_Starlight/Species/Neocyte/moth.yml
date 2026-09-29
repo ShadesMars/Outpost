@@ -1,7 +1,7 @@
 - type: species
   id: NeoMoth
   name: subspecies-name-neomoth
-  roundStart: true
+  roundStart: false
   prototype: MobNeoMoth
   sprites: MobNeoMothSprites
   defaultSkinTone: "#ffda93"

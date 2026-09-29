@@ -1,7 +1,7 @@
 - type: species
   id: NeoDiona
   name: subspecies-name-neodiona
-  roundStart: true
+  roundStart: false
   prototype: MobNeoDiona
   sprites: MobNeoDionaSprites
   markingLimits: MobNeoDionaMarkingLimits

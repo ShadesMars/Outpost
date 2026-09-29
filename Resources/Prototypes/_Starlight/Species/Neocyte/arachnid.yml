@@ -1,7 +1,7 @@
 - type: species
   id: NeoArachnid
   name: subspecies-name-neoarachnid
-  roundStart: true
+  roundStart: false
   prototype: MobNeoArachnid
   sprites: MobNeoArachnidSprites
   markingLimits: MobNeoArachnidMarkingLimits
