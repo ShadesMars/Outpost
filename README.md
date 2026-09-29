@@ -8,7 +8,6 @@
 [![Steam](https://img.shields.io/badge/Steam-SS14%20-blue)](https://store.steampowered.com/app/1255460/Space_Station_14/)
 [![Starlight Client](https://img.shields.io/badge/Starlight_Client-Download-blue)](https://github.com/ss14Starlight/Starlight.Launcher)
 [![GitHub](https://img.shields.io/github/stars/ShadesMars/Outpost?style=social)]([https://github.com/ShadesMars/Outpost])
-[![GitHub](https://img.shields.io/github/stars/ShadesMars/Outpost?style=social)]([https://github.com/ShadesMars/Outpost])
 
 # Outpost
 <sub>Space-Station 14</sub>
