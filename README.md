@@ -4,23 +4,22 @@
 
 <div class="header" align="center">
 
-[![Discord](https://img.shields.io/discord/1272545509562777621?label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/HyDhPwAmUq)
+[//]: #[![Discord](https://img.shields.io/discord/1272545509562777621?label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/HyDhPwAmUq)
 [![Steam](https://img.shields.io/badge/Steam-SS14%20-blue)](https://store.steampowered.com/app/1255460/Space_Station_14/)
 [![Starlight Client](https://img.shields.io/badge/Starlight_Client-Download-blue)](https://github.com/ss14Starlight/Starlight.Launcher)
-[![GitHub](https://img.shields.io/github/stars/ss14Starlight/space-station-14?style=social)]([https://github.com/ss14Starlight/space-station-14])
+[![GitHub](https://img.shields.io/github/stars/ShadesMars/Outpost?style=social)]([https://github.com/ShadesMars/Outpost])
+[![GitHub](https://img.shields.io/github/stars/ShadesMars/Outpost?style=social)]([https://github.com/ShadesMars/Outpost])
 
-# STARLIGHT
+# Outpost
 <sub>Space-Station 14</sub>
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ss14Starlight/space-station-14)
-![GitHub Issues](https://img.shields.io/github/issues/ss14Starlight/space-station-14)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr-closed/ss14Starlight/space-station-14)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ShadesMars/Outpost)
+![GitHub Issues](https://img.shields.io/github/issues/ShadesMars/Outpost)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr-closed/ShadesMars/Outpost)
 
 </div>
 
-STARLIGHT is an open source project aimed at creating unique mechanics and a pleasant game atmosphere in the game Space Station 14,
-
-a game about survival on a space station where there are constant confrontations between the crew and antagonists created to prevent the crew from achieving their goals.
+Outpost is a fork of [STARLIGHT](https://github.com/ss14Starlight/space-station-14) and inspired by [Outpost 21](https://github.com/Willburd/CHOMPost21).
 
 ## Starlight Documentation
 The [Starlight Developer Documentation](https://docs.starlight.network/s/d49865f5-b555-4803-b5d7-5c2fde54fbd9/doc/developer-guides-Hf0UsFaugc) contains useful documents and resources on getting started with this repository.
@@ -35,16 +34,6 @@ Space-Station 14 has [docs site](https://docs.spacestation14.io/) documentation 
 ---
 
 ## License
-
-
-
-> [!NOTE]
-> **Relicensing in progress.** The Starlight Fork License (`LICENSE-Starlight.TXT`) was applied to Starlight contributions
-> from **2024-11-04** (commit `84205e38`) through **2026-02-28** (commit `01eff0f7`).
-> This license **remains in effect** for contributions made during that period until explicit relicensing
-> consent is received from the respective authors. Once consent is given, those contributions are relicensed under MIT.
-> All contributions outside of that range are licensed under MIT (`LICENSE.TXT`).
-> Relicensing requests are tracked in [issue #3499](https://github.com/ss14Starlight/space-station-14/issues/3499).
 
 ### Click each banner for further information
 
