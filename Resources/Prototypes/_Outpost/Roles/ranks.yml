@@ -1,0 +1,13 @@
+- type: rank
+  id: RankCivilian
+  name: Civilian
+
+- type: rank
+  id: RankRecruit
+  name: Recruit
+  paygrade: E0
+
+- type: rank
+  id: RankPrivate
+  name: Private
+  paygrade: E1
