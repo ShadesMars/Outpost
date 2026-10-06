@@ -8,6 +8,7 @@
   - MailTech
   - Quartermaster
   - MiningSpecialist
+  editorHidden: true
 
 - type: department
   id: Civilian
@@ -38,6 +39,7 @@
   - Prisoner
   - RadioHost
   # Starlight end
+  editorHidden: true
 
 - type: department
   id: CentralCommand
@@ -85,6 +87,7 @@
   - NanoTrasenRepresentative
   primary: false
   weight: 100
+  editorHidden: true
 
 - type: department
   id: Engineering
@@ -96,6 +99,7 @@
   - ChiefEngineer
   - StationEngineer
   - TechnicalAssistant
+  editorHidden: true
 
 - type: department
   id: Medical
@@ -110,6 +114,7 @@
   - Psychologist
   - Paramedic
   - Surgeon # Starlight-edit
+  editorHidden: true
 
 - type: department
   id: Security
@@ -126,6 +131,7 @@
   - Warden
   - DutyOfficer # Starlight
   - K9 # Starlight
+  editorHidden: true
 
 - type: department
   id: Science
@@ -137,6 +143,7 @@
   - Scientist
   - ResearchAssistant
   - Roboticist
+  editorHidden: true
 
 - type: department
   id: Silicon
@@ -146,3 +153,4 @@
   roles:
   - Borg
   - StationAi
+  editorHidden: true
