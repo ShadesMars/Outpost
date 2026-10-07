@@ -2,7 +2,17 @@
   id: OutpostCivilian
   name: department-Civilian
   description: department-Civilian-description
+  color: "#3333FF"
+  weight: 10
+  roles:
+  - OutpostSiteDirector
+
+- type: department
+  id: OutpostCivilian
+  name: department-Command
+  description: department-Command-description
   color: "#A32800"
   weight: 1
   roles:
   - OutpostVisitor
+  primary: false

@@ -1,3 +1,6 @@
 # Jobs
 - type: playTimeTracker
   id: OutpostJobVisitor
+
+- type: playTimeTracker
+  id: OutpostJobSiteDirector

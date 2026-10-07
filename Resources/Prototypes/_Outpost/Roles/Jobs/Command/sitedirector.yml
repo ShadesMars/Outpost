@@ -1,0 +1,24 @@
+- type: job
+  id: OutpostSiteDirector
+  name: job-name-sitedirector
+  description: job-description-sitedirector
+  playTimeTracker: OutpostJobSiteDirector
+  icon: "JobIconCaptain"
+  joinNotifyCrew: true
+  supervisors: job-supervisors-hire
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+  displayWeight: 3
+  ranks:
+    RankMajor:
+    - !type:RoleTimeRequirement
+      role: OutpostJobSiteDirector
+      time: 60h
+    RankCaptain: []
+  setPreference: true
