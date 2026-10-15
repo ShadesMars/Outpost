@@ -20,6 +20,7 @@ using Robust.Shared.Utility;
 using Content.Shared._Starlight.Traits;
 using Content.Shared._Starlight.Humanoid;
 using Content.Shared._Starlight.CCVar;
+using Content.Shared._RMC14.Marines.Roles.Ranks;
 #endregion
 
 namespace Content.Shared.Preferences
@@ -136,6 +137,7 @@ namespace Content.Shared.Preferences
             HumanoidCharacterAppearance appearance,
             SpawnPriorityPreference spawnPriority,
             HashSet<ProtoId<JobPrototype>> jobPreferences,
+            Dictionary<ProtoId<JobPrototype>, ProtoId<RankPrototype>?> rankPreference, // Outpost
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
@@ -161,6 +163,7 @@ namespace Content.Shared.Preferences
             Appearance = appearance;
             SpawnPriority = spawnPriority;
             _jobPreferences = jobPreferences;
+            _rankPreferences = rankPreference; // Outpost
             _antagPreferences = antagPreferences;
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
@@ -189,6 +192,7 @@ namespace Content.Shared.Preferences
                 other.Appearance.Clone(),
                 other.SpawnPriority,
                 new HashSet<ProtoId<JobPrototype>>(other.JobPreferences),
+                new Dictionary<ProtoId<JobPrototype>, ProtoId<RankPrototype>?>(other.RankPreferences), // Outpost
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
@@ -510,6 +514,7 @@ namespace Content.Shared.Preferences
             if (!Cybernetics.SequenceEqual(other.Cybernetics)) return false; // Starlight
             if (SpawnPriority != other.SpawnPriority) return false;
             if (!_jobPreferences.SequenceEqual(other._jobPreferences)) return false;
+            if (!_rankPreferences.SequenceEqual(other._rankPreferences)) return false; // Outpost
             if (!_antagPreferences.SequenceEqual(other._antagPreferences)) return false;
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
@@ -537,15 +542,15 @@ namespace Content.Shared.Preferences
             if (Name != other.Name) throw new DebugAssertException($"Name doesn't match expected '{Name}' got '{other.Name}'");
             if (Age != other.Age) throw new DebugAssertException($"Age doesn't match expected '{Age}' got '{other.Age}'");
             if (Sex != other.Sex) throw new DebugAssertException($"Sex doesn't match expected '{Sex}' got '{other.Sex}'");
-            if (Gender != other.Gender) throw new DebugAssertException($"Gender doesn't match expected '{Gender}' got '{other.Gender}'");;
-            if (Species != other.Species) throw new DebugAssertException($"Species doesn't match expected '{Species.Id}' got '{other.Species.Id}'");;
+            if (Gender != other.Gender) throw new DebugAssertException($"Gender doesn't match expected '{Gender}' got '{other.Gender}'"); ;
+            if (Species != other.Species) throw new DebugAssertException($"Species doesn't match expected '{Species.Id}' got '{other.Species.Id}'"); ;
             if (CustomSpecieName != other.CustomSpecieName) throw new DebugAssertException($"CustomSpecieName doesn't match expected '{CustomSpecieName}' got '{other.CustomSpecieName}'");
             if (!Cybernetics.SequenceEqual(other.Cybernetics)) throw new DebugAssertException($"Cybernetics doesn't match expected '{Cybernetics}' got '{other.Cybernetics}'");
             if (SpawnPriority != other.SpawnPriority) throw new DebugAssertException($"SpawnPriority doesn't match expected '{SpawnPriority}' got '{other.SpawnPriority}'");
-            if (!_jobPreferences.SequenceEqual(other._jobPreferences)) throw new DebugAssertException($"_jobPreferences doesn't match expected '{_jobPreferences}' got '{other._jobPreferences}'");;
+            if (!_jobPreferences.SequenceEqual(other._jobPreferences)) throw new DebugAssertException($"_jobPreferences doesn't match expected '{_jobPreferences}' got '{other._jobPreferences}'"); ;
             if (!_antagPreferences.SequenceEqual(other._antagPreferences)) throw new DebugAssertException($"_antagPreferences doesn't match expected '{_antagPreferences}' got '{other._antagPreferences}'");
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) throw new DebugAssertException($"_traitPreferences doesn't match expected '{_traitPreferences}' got '{other._traitPreferences}'");
-            if (!Loadouts.SequenceEqual(other.Loadouts))  throw new DebugAssertException($"Loadouts doesn't match expected '{Loadouts}' got '{other.Loadouts}'");
+            if (!Loadouts.SequenceEqual(other.Loadouts)) throw new DebugAssertException($"Loadouts doesn't match expected '{Loadouts}' got '{other.Loadouts}'");
             if (FlavorText != other.FlavorText) throw new DebugAssertException($"FlavorText doesn't match expected '{FlavorText}' got '{other.FlavorText}'");
             if (Enabled != other.Enabled) throw new DebugAssertException($"Enabled doesn't match expected '{Enabled}' got '{other.Enabled}'");
             if (!SpeciesLoadoutEquals(SpeciesLoadout, other.SpeciesLoadout)) throw new DebugAssertException($"SpeciesLoadout doesn't match"); // Far Horizons
@@ -714,6 +719,18 @@ namespace Content.Shared.Preferences
             SpawnPriority = spawnPriority;
 
             _jobPreferences = new HashSet<ProtoId<JobPrototype>>(jobs);
+
+            // Outpost - Start
+            var ranks = new Dictionary<ProtoId<JobPrototype>, ProtoId<RankPrototype>?>(RankPreferences
+                .Where(p => prototypeManager.TryIndex<JobPrototype>(p.Key, out var job) && job.SetRankPreference && p.Value != null));
+
+            _rankPreferences.Clear();
+
+            foreach (var (job, rank) in ranks)
+            {
+                _rankPreferences.Add(job, rank);
+            }
+            // Outpost - End
 
             _antagPreferences.Clear();
             _antagPreferences.UnionWith(antags);

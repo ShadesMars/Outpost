@@ -22,3 +22,4 @@
       time: 60h
     RankCaptain: []
   setPreference: true
+  setRankPreference: true

@@ -2,6 +2,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
+using Content.Shared._RMC14.Marines.Roles.Ranks;
 using Content.Shared.Clothing;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
@@ -22,6 +23,8 @@ public sealed partial class HumanoidProfileEditor
     private LoadoutWindow? _loadoutWindow;
 
     private readonly List<(string, RequirementsSelector)> _jobPriorities = new();
+
+    private readonly List<(string JobId, OptionButton Button, List<ProtoId<RankPrototype>?> RankIds)> _rankPriorities = new(); // Outpost
 
     private readonly Dictionary<string, BoxContainer> _jobCategories = new();
 
@@ -92,6 +95,7 @@ public sealed partial class HumanoidProfileEditor
         JobList.RemoveAllChildren();
         _jobCategories.Clear();
         _jobPriorities.Clear();
+        _rankPriorities.Clear(); // Outpost
         var firstCategory = true;
 
         var departments = new List<DepartmentPrototype>();
@@ -261,20 +265,92 @@ public sealed partial class HumanoidProfileEditor
                     };
                 }
 
+                // Outpost - Start
+                var rankOptions = new OptionButton()
+                {
+                    Name = "RankOptionsButton",
+                    HorizontalAlignment = HAlignment.Right,
+                    VerticalAlignment = VAlignment.Center,
+                    Margin = new Thickness(3f, 3f, 0f, 0f)
+                };
+
+                // index 0 = Auto (null), subsequent entries map 1:1 to job.Ranks in definition order.
+                var rankProtoIds = new List<ProtoId<RankPrototype>?> { null };
+
+                // If the job has ranks we will add the options as buttons.
+                if (job.Ranks != null && job.SetRankPreference)
+                {
+                    rankOptions.AddItem("Auto");
+
+                    foreach (var rank in job.Ranks)
+                    {
+                        if (_prototypeManager.TryIndex(rank.Key, out RankPrototype? rankPrototype) && rankPrototype != null)
+                        {
+                            rankOptions.AddItem(rankPrototype.Name);
+                            rankProtoIds.Add(rank.Key);
+
+                            if (rank.Value != null && !_requirements.CheckRequirementsForNonRole(rank.Value, _playerManager.LocalSession, Profile, out _))
+                                rankOptions.SetItemDisabled(rankOptions.ItemCount - 1, true);
+                        }
+                    }
+
+                    // If the job only has 1 rank there is nothing to choose.
+                    if (rankProtoIds.Count <= 2)
+                        rankOptions.Disabled = true;
+
+                    rankOptions.OnItemSelected += args =>
+                    {
+                        rankOptions.SelectId(args.Id);
+                        Profile = Profile?.WithRankPreference(job.ID, rankProtoIds[args.Id]);
+
+                        UpdatePlaytimeRankPreferenceControls();
+                        SetDirty();
+                    };
+                }
+                // Else if the job does not contain ranks we do not show it (Xenos as an example).
+                else
+                {
+                    rankOptions.Visible = false;
+                }
+                // Outpost - End
+
                 _jobPriorities.Add((job.ID, selector));
+                _rankPriorities.Add((job.ID, rankOptions, rankProtoIds));
                 jobContainer.AddChild(selector);
                 jobContainer.AddChild(loadoutWindowBtn);
+                jobContainer.AddChild(rankOptions);
                 category.AddChild(jobContainer);
             }
         }
 
         UpdateJobPreferences();
+        UpdatePlaytimeRankPreferenceControls();
     }
 
     private void UpdateJobPreferences()
     {
         foreach (var (jobId, prioritySelector) in _jobPriorities)
             prioritySelector.Select(Profile?.JobPreferences.Contains(jobId) == true ? 0 : 1);
+    }
+
+    private void UpdatePlaytimeRankPreferenceControls()
+    {
+        foreach (var (jobID, optionsButton, rankIds) in _rankPriorities)
+        {
+            if (!_prototypeManager.TryIndex(jobID, out JobPrototype? job) || job == null)
+                continue;
+
+            if (job.Ranks == null || !job.SetRankPreference)
+                continue;
+
+            ProtoId<RankPrototype>? preferredRank = null;
+            Profile?.RankPreferences.TryGetValue(jobID, out preferredRank);
+            var selectedIndex = rankIds.IndexOf(preferredRank);
+            if (selectedIndex < 0)
+                selectedIndex = 0;
+
+            optionsButton.Select(selectedIndex);
+        }
     }
 
     private void OpenLoadout(

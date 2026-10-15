@@ -455,6 +455,7 @@ namespace Content.Server.Database
         public string SkinColor { get; set; } = null!;
         public int SpawnPriority { get; set; } = 0;
         public List<Job> Jobs { get; } = new();
+        public List<Rank> Ranks { get; } = new(); // Outpost
         public List<Antag> Antags { get; } = new();
         public List<Trait> Traits { get; } = new();
         public List<ProfileRoleLoadout> Loadouts { get; } = new();
@@ -508,6 +509,16 @@ namespace Content.Server.Database
         public int ProfileId { get; set; }
 
         public string TraitName { get; set; } = null!;
+    }
+
+    public class Rank
+    {
+        public int Id { get; set; }
+        public Profile Profile { get; set; } = null!;
+        public int ProfileId { get; set; }
+
+        public string JobName { get; set; } = null!;
+        public string RankName { get; set; } = null!;
     }
 
     #region Loadouts
