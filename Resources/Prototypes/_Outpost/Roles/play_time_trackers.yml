@@ -4,3 +4,6 @@
 
 - type: playTimeTracker
   id: OutpostJobSiteDirector
+
+- type: playTimeTracker
+  id: OutpostJobHeadOfPersonnel

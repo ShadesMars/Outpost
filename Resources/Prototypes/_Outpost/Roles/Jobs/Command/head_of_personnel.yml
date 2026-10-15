@@ -1,0 +1,29 @@
+- type: job
+  id: OutpostHeadOfPersonnel
+  name: job-name-hop
+  description: job-outpost-description-hop
+  playTimeTracker: OutpostJobHeadOfPersonnel
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostCivilian
+      time: 20h
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-outpost-sitedirector
+  access:
+    - Command
+    - HeadOfPersonnel
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
+  displayWeight: 2
+  ranks:
+    RankCaptain:
+      - !type:RoleTimeRequirement
+        role: OutpostJobHeadOfPersonnel
+        time: 60h
+    RankFirstLieutenant: []
+  setPreference: true
+  setRankPreference: true

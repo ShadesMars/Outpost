@@ -6,7 +6,17 @@
   weight: 10
   roles:
   - OutpostSiteDirector
+  - OutpostHeadOfPersonnel
   primary: false
+
+- type: department
+  id: OutpostCargo
+  name: department-Cargo
+  description: department-Cargo-description
+  color: "#BB9040"
+  weight: 2
+  roles:
+  - OutpostHeadOfPersonnel
 
 - type: department
   id: OutpostCivilian
@@ -15,4 +25,5 @@
   color: "#A32800"
   weight: 1
   roles:
+  - OutpostHeadOfPersonnel
   - OutpostVisitor
