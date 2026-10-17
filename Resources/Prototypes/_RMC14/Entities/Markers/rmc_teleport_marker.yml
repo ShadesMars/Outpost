@@ -41,36 +41,6 @@
 - type: entity
   parent: MarkerBase
   id: RMCTriggerTeleporterViewer
-  name: teleporter viewer
-  suffix: RMC14, 9x9
-  components:
-  - type: Sprite
-    sprite: _RMC14/Markers/landmarks.rsi
-    layers:
-    - state: projector
-  - type: Physics
-    bodyType: Static
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-4.49,-4.49,4.49,4.49"
-        density: 1500
-        hard: false
-        mask:
-        - MobMask
-        - MobLayer
-        - GhostImpassable
-        layer:
-        - MobMask
-        - MobLayer
-        - GhostImpassable
-  - type: RMCTeleporterViewer
-
-- type: entity
-  parent: MarkerBase
-  id: RMCTriggerTeleporterViewer
   abstract: true
   name: teleporter viewer
   components:
