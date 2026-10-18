@@ -28,6 +28,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Content.Shared._Starlight.Traits;
 using Content.Server._Starlight.Humanoid;
+using Content.Shared._RMC14.Marines.Roles.Ranks;
 
 namespace Content.Server.Database
 {
@@ -52,6 +53,7 @@ namespace Content.Server.Database
             var prefs = await db.DbContext
                 .Preference
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
+                .Include(p => p.Profiles).ThenInclude(h => h.Ranks) // Outpost
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
                 .Include(p => p.Profiles) // Starlight
@@ -112,6 +114,7 @@ namespace Content.Server.Database
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
+                .Include(p => p.Ranks) // Outpost
                 .Include(p => p.Antags)
                 .Include(p => p.Traits)
                 .Include(p => p.Loadouts)
@@ -241,6 +244,11 @@ namespace Content.Server.Database
         private static HumanoidCharacterProfile ConvertProfiles(Profile profile)
         {
             var jobs = profile.Jobs.Select(j => new ProtoId<JobPrototype>(j.JobName)).ToHashSet();
+            // Outpost - Start
+            var ranks = profile.Ranks.ToDictionary(
+                r => new ProtoId<JobPrototype>(r.JobName),
+                r => (ProtoId<RankPrototype>?) new ProtoId<RankPrototype>(r.RankName));
+            // Outpost - End
             var antags = profile.Antags.Select(a => new ProtoId<AntagPrototype>(a.AntagName));
             var traits = profile.Traits.Select(t => new ProtoId<TraitPrototype>(t.TraitName));
 
@@ -364,6 +372,7 @@ namespace Content.Server.Database
                 ),
                 spawnPriority,
                 jobs,
+                ranks, // Outpost
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
@@ -437,6 +446,15 @@ namespace Content.Server.Database
                 humanoid.JobPreferences
                     .Select(j => new Job { JobName = j })
             );
+
+            // Outpost - Start
+            profile.Ranks.Clear();
+            profile.Ranks.AddRange(
+                humanoid.RankPreferences
+                    .Where(r => r.Value != null)
+                    .Select(r => new Rank { JobName = r.Key, RankName = r.Value!.Value.Id })
+            );
+            // Outpost - End
 
             profile.Antags.Clear();
             profile.Antags.AddRange(

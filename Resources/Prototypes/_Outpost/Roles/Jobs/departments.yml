@@ -1,0 +1,29 @@
+- type: department
+  id: OutpostCommand
+  name: department-Command
+  description: department-Command-description
+  color: "#3333FF"
+  weight: 10
+  roles:
+  - OutpostSiteDirector
+  - OutpostHeadOfPersonnel
+  primary: false
+
+- type: department
+  id: OutpostCargo
+  name: department-Cargo
+  description: department-Cargo-description
+  color: "#BB9040"
+  weight: 2
+  roles:
+  - OutpostHeadOfPersonnel
+
+- type: department
+  id: OutpostCivilian
+  name: department-Civilian
+  description: department-Civilian-description
+  color: "#A32800"
+  weight: 1
+  roles:
+  - OutpostHeadOfPersonnel
+  - OutpostVisitor

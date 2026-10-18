@@ -1,0 +1,11 @@
+- type: job
+  id: OutpostVisitor
+  name: job-name-visitor
+  description: job-description-visitor
+  playTimeTracker: OutpostJobVisitor
+  icon: "JobIconVisitor"
+  supervisors: job-supervisors-everyone
+  displayWeight: -1
+  ranks:
+    RankCivilian: []
+  setPreference: true

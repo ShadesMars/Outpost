@@ -1,0 +1,84 @@
+# Misc
+- type: rank
+  id: RankCivilian
+  name: Civilian
+
+# Enlisted
+- type: rank
+  id: RankRecruit
+  name: Recruit
+  paygrade: E0
+
+- type: rank
+  id: RankPrivate
+  name: Private
+  paygrade: E1
+
+- type: rank
+  id: RankPrivateFirstClass
+  name: Private First Class
+  paygrade: E2
+
+- type: rank
+  id: RankLanceCorporal
+  name: Corporal
+  paygrade: E3
+
+- type: rank
+  id: RankSergeant
+  name: Sergeant
+  paygrade: E4
+
+- type: rank
+  id: RankStaffSergeant
+  name: Staff Sergeant
+  paygrade: E5
+
+- type: rank
+  id: RankSergeantFirstClass
+  name: Sergeant First Class
+  paygrade: E6
+
+- type: rank
+  id: RankMasterSergeant
+  name: Master Sergeant
+  paygrade: E7
+
+- type: rank
+  id: RankSergeantMajor
+  name: Sergeant Major
+  paygrade: E8
+
+# Warrant officers
+- type: rank
+  id: RMCRankWarrantOfficer
+  name: Warrant Officer
+  prefix: WarOff.
+  paygrade: WO-1
+
+- type: rank
+  id: RMCRankChiefWarrantOfficer
+  name: Chief Warrant Officer
+  prefix: CWarOff.
+  paygrade: WO-2
+
+# Officers
+- type: rank
+  id: RankSecondLieutenant
+  name: Second Lieutenant
+  paygrade: O1
+
+- type: rank
+  id: RankFirstLieutenant
+  name: First Lieutenant
+  paygrade: O2
+
+- type: rank
+  id: RankCaptain
+  name: Captain
+  paygrade: O3
+
+- type: rank
+  id: RankMajor
+  name: Major
+  paygrade: O4

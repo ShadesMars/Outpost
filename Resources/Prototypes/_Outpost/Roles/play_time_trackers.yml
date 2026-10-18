@@ -1,0 +1,9 @@
+# Jobs
+- type: playTimeTracker
+  id: OutpostJobVisitor
+
+- type: playTimeTracker
+  id: OutpostJobSiteDirector
+
+- type: playTimeTracker
+  id: OutpostJobHeadOfPersonnel

@@ -1,4 +1,5 @@
-﻿using Content.Shared.Access;
+﻿using Content.Shared._RMC14.Marines.Roles.Ranks; // Outpost
+using Content.Shared.Access;
 using Content.Shared.Guidebook;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.StatusIcon;
@@ -34,6 +35,17 @@ namespace Content.Shared.Roles
 
         [DataField("hidden")] // 🌟Starlight🌟
         public bool Hidden { get; private set; } = false;
+
+         // Outpost - Start
+        [DataField]
+        public Dictionary<ProtoId<RankPrototype>, HashSet<JobRequirement>?>? Ranks { get; private set; }
+
+        /// <summary>
+        /// Should this job have rank preferences appear in the preferences menu?
+        /// </summary>
+        [DataField]
+        public bool SetRankPreference { get; private set; } = false;
+        // Outpost - End
 
         [ViewVariables(VVAccess.ReadOnly)]
         public string LocalizedName => Loc.GetString(Name);
@@ -76,7 +88,7 @@ namespace Content.Shared.Roles
         ///     Should this job appear in preferences menu?
         /// </summary>
         [DataField]
-        public bool SetPreference { get; private set; } = true;
+        public bool SetPreference { get; private set; } = false; // Outpost
 
         /// <summary>
         ///     Should the selected traits be applied for this job?

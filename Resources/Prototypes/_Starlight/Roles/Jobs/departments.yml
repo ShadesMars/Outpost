@@ -28,6 +28,7 @@
   - NTNCBlueShield
   primary: false
   weight: 50
+  editorHidden: true
 
 - type: department
   id: TSF
@@ -53,6 +54,7 @@
   - SalvageSpecialist
   - SalvageMedic
   primary: false
+  editorHidden: true
 
 - type: department
   id: Casino
