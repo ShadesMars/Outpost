@@ -1,7 +1,7 @@
 - type: species
   id: Vox
   name: species-name-vox
-  roundStart: false
+  roundStart: true
   prototype: MobVox
   sprites: MobVoxSprites
   markingLimits: MobVoxMarkingLimits
@@ -13,7 +13,7 @@
   naming: First
   sexes:
   - Unsexed
-  customName: true # Starlight
+  customName: false # Starlight
 
 - type: speciesBaseSprites
   id: MobVoxSprites

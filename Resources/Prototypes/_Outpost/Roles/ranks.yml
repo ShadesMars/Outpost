@@ -53,13 +53,11 @@
 - type: rank
   id: RMCRankWarrantOfficer
   name: Warrant Officer
-  prefix: WarOff.
   paygrade: WO-1
 
 - type: rank
   id: RMCRankChiefWarrantOfficer
   name: Chief Warrant Officer
-  prefix: CWarOff.
   paygrade: WO-2
 
 # Officers

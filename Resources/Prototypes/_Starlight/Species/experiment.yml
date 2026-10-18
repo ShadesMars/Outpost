@@ -1,7 +1,7 @@
 - type: species
   id: Experiment
   name: species-name-experiment
-  roundStart: false
+  roundStart: true
   prototype: MobExperiment
   sprites: MobExperimentSprites
   markingLimits: MobExperimentMarkingLimits
@@ -12,7 +12,7 @@
   maleFirstNames: names_experiment
   femaleFirstNames: names_experiment
   naming: IdFirst
-  customName: true
+  customName: false
   sexes:
   - Unsexed
   minHeight: 0.8

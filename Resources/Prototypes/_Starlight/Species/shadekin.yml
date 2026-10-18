@@ -16,7 +16,7 @@
   maxAge: 300
   youngAge: 100
   oldAge: 200
-  customName: true
+  customName: false
 
 - type: speciesBaseSprites
   id: MobShadekinSprites
