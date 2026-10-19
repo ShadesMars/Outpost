@@ -11,12 +11,6 @@
   description: It's a sturdy window and a sliding door. Wow!
 
 - type: entity
-  id: WindoorClockwork
-  parent: BaseClockworkWindoor
-  name: clockwork windoor
-  description: It's a sturdy window and a sliding door. Wow!
-
-- type: entity
   id: WindoorPlasma
   parent: BasePlasmaWindoor
   name: plasma windoor
@@ -75,7 +69,7 @@
 - type: entity
   parent: Windoor
   id: WindoorChapelLocked
-  suffix: Shrine, Locked # Starlight: Chapel -> Shrine
+  suffix: Chapel, Locked
   components:
   - type: ContainerFill
     containers:
@@ -222,7 +216,7 @@
 - type: entity
   parent: WindoorSecure
   id: WindoorSecureChapelLocked
-  suffix: Shrine, Locked # Starlight: Chapel -> Shrine
+  suffix: Chapel, Locked
   components:
   - type: ContainerFill
     containers:
@@ -387,14 +381,14 @@
     containers:
       board: [ DoorElectronicsKitchen ]
 
-- type: entity
-  parent: WindoorSecureSecurityLocked
-  id: WindoorSecureSecurityInternalAffairsLocked
-  suffix: Security/Internal Affairs, Locked # Starlight
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsSecurityInternalAffairs ] # Starlight
+# - type: entity
+#   parent: WindoorSecureSecurityLocked
+#   id: WindoorSecureSecurityLawyerLocked
+#   suffix: Security/Lawyer, Locked
+#   components:
+#   - type: ContainerFill
+#     containers:
+#       board: [ DoorElectronicsSecurityLawyer ]
 
 - type: entity
   parent: WindoorSecure
