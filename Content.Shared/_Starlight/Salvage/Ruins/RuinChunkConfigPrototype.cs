@@ -167,7 +167,6 @@ public sealed partial class RuinChunkConfigPrototype : IPrototype
         "WindoorSecure",
         "WindoorPlasma",
         "WindoorSecurePlasma",
-        "WindoorClockwork",
         "Firelock",
         "FirelockGlass",
         "FirelockEdge",

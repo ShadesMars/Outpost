@@ -1,0 +1,48 @@
+# Example:
+# #  yyyy-mm-dd
+# ItemIdFrom: ItemIdTo - Change item
+# ItemIdFrom: null - Removes item from map
+
+# 2026-10-19
+IronRockBananium: IronRock
+AirlockSecurityInternalAffairsGlassLocked: null
+AirlockSecurityInternalAffairsLocked: null
+ClockworkGrille: Grille
+ClockworkGrilleDiagonal: GrilleDiagonal
+MetalDoor: SilverDoor
+BananiumDoor: SilverDoor
+AsteroidRockBananium: null
+AsteroidRockBananiumCrab: null
+WallRockBasalt: null
+WallRockBasaltTin: null
+WallRockBasaltQuartz: null
+WallRockBasaltCoal: null
+WallRockBasaltSalt: null
+WallRockBasaltGold: null
+WallRockBasaltSilver: null
+WallRockBasaltPlasma: null
+WallRockBasaltUranium: null
+WallRockBasaltDiamond: null
+WallRockBasaltArtifactFragment: null
+WallRockBananium: null
+TurnstileAssembly: null
+Turnstile: null
+TurnstileArrow: null
+AirAlarmXeno: null
+AirAlarmAssemblyXeno: null
+FireAlarmXeno: null
+FireAlarmAssemblyXeno: null
+AirlockInternalAffairsGlassLocked: null
+ClockworkGrilleBroken: null
+TurnstileGenpopEnter: null
+TurnstileGenpopLeave: null
+TurnstileSecurity: null
+TurnstileCommand: null
+TurnstileCentCommCommand: null
+WindoorSecureSecurityInternalAffairsLocked: null
+LockableButtonInternalAffairs: null
+HolopadSecurityInternalAffairs: null
+AirlockMaintInternalAffairsLocked: null
+AirlockInternalAffairsLocked: null
+DoorElectronicsSecurityInternalAffairs: null
+DoorElectronicsInternalAffairs: null

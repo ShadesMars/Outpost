@@ -10,5 +10,5 @@
     sprite: _Starlight/Structures/Windows/xenoborglight.rsi
     state: full
   - type: IconSmooth
-    key: windows
+    key: walls
     base: xenoborglight

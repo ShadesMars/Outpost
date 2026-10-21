@@ -1,4 +1,0 @@
-- type: !PartialOnly entity
-  id: Turnstile
-  components:
-  - type: ZoneBoundary

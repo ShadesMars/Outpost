@@ -25,6 +25,7 @@
   - type: Sprite
     drawdepth: WallMountedItems
     sprite: Structures/Power/apc.rsi
+    offset: 0, -0.25
     layers:
     - state: base
     - state: panel
@@ -33,23 +34,23 @@
     - state: display-charging
       shader: unshaded
       map: ["enum.ApcVisualLayers.ChargeState"]
-    - state: lock0-locked
+    - state: channel-on
       shader: unshaded
       map: ["enum.ApcVisualLayers.InterfaceLock"]
       visible: false
-    - state: lock1-locked
+    - state: channel-disconnected
       shader: unshaded
       map: ["enum.ApcVisualLayers.PanelLock"]
       visible: false
-    - state: lock1-locked #when these are implemented get actual sprites.
+    - state: channel-disconnected #when these are implemented get actual sprites.
       shader: unshaded
       map: ["enum.ApcVisualLayers.Equipment"]
       visible: false
-    - state: lock1-locked
+    - state: channel-disconnected
       shader: unshaded
       map: ["enum.ApcVisualLayers.Lighting"]
       visible: false
-    - state: lock1-locked
+    - state: channel-disconnected
       shader: unshaded
       map: ["enum.ApcVisualLayers.Environment"]
       visible: false
@@ -168,6 +169,7 @@
   components:
   - type: Sprite
     sprite: Structures/Power/apc.rsi
+    offset: 0, -0.25
     state: frame
   - type: Construction
     graph: APC

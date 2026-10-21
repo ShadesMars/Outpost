@@ -9,15 +9,6 @@
     currentOre: OreBluespace
   - type: Sprite
     layers:
-    - state: rock_asteroid
-    - map: [ "enum.EdgeLayer.South" ]
-      state: rock_asteroid_south
-    - map: [ "enum.EdgeLayer.East" ]
-      state: rock_asteroid_east
-    - map: [ "enum.EdgeLayer.North" ]
-      state: rock_asteroid_north
-    - map: [ "enum.EdgeLayer.West" ]
-      state: rock_asteroid_west
     - state: rock_bluespace
       sprite: _Starlight/Structures/Walls/rock.rsi
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
@@ -33,15 +24,6 @@
     currentOre: OreBluespace
   - type: Sprite
     layers:
-    - state: ironrock
-    - map: [ "enum.EdgeLayer.South" ]
-      state: ironrock_south
-    - map: [ "enum.EdgeLayer.East" ]
-      state: ironrock_east
-    - map: [ "enum.EdgeLayer.North" ]
-      state: ironrock_north
-    - map: [ "enum.EdgeLayer.West" ]
-      state: ironrock_west
     - state: rock_bluespace
       sprite: _Starlight/Structures/Walls/rock.rsi
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
@@ -51,6 +33,8 @@
   name: darkstone
   parent: WallRock
   components:
+  - type: IconSmooth
+    enabled: false
   - type: Icon
     sprite: _Starlight/Structures/Walls/rock.rsi
     state: rock_dark
@@ -112,9 +96,6 @@
       state: rock_dark_north
     - map: [ "enum.EdgeLayer.West" ]
       state: rock_dark_west
-    - state: rock_phoron
-      sprite: Structures/Walls/rock.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 
 - type: entity
   id: WallTrash
@@ -248,28 +229,28 @@
       currentOre: null
       oreRarityPrototypeId: IronRockGoldCrabProb
 
-- type: weightedRandomOre
-  id: IronRockBananiumCrabProb
-  weights:
-    OreBananium: 49
-    OreBananiumCrab: 1
+# - type: weightedRandomOre
+#   id: IronRockBananiumCrabProb
+#   weights:
+#     OreBananium: 49
+#     OreBananiumCrab: 1
 
-- type: entity
-  id: IronRockBananiumCrab100
-  parent: IronRockBananium
-  suffix: Crab
-  components:
-    - type: OreVein
-      currentOre: OreBananiumCrab
+# - type: entity
+#   id: IronRockBananiumCrab100
+#   parent: IronRockBananium
+#   suffix: Crab
+#   components:
+#     - type: OreVein
+#       currentOre: OreBananiumCrab
 
-- type: entity
-  id: IronRockBananiumCrab2
-  parent: IronRockBananium
-  suffix: Bananium 98%, Crab 2%
-  components:
-    - type: OreVein
-      currentOre: null
-      oreRarityPrototypeId: IronRockBananiumCrabProb
+# - type: entity
+#   id: IronRockBananiumCrab2
+#   parent: IronRockBananium
+#   suffix: Bananium 98%, Crab 2%
+#   components:
+#     - type: OreVein
+#       currentOre: null
+#       oreRarityPrototypeId: IronRockBananiumCrabProb
 
 - type: weightedRandomOre
   id: IronRockIronCrabProb

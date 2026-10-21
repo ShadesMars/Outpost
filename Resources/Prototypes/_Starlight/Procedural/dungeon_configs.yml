@@ -212,7 +212,7 @@
   table: !type:GroupSelector
     children:
     - id: CableApcExtension
-    - id: MetalDoor
+    - id: SilverDoor
 
 - type: entityTable
   id: SovietDungeonRoomEntrance
