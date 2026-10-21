@@ -21,7 +21,8 @@
     graph: LightFixture
     node: bulbLight
   - type: Sprite
-    sprite: _Starlight/Structures/Wallmounts/Lighting/strobe_light.rsi #SL Edit
+    sprite: Structures/Wallmounts/Lighting/strobe_light.rsi
+    offset: 0, 1
     drawdepth: WallMountedItems
     layers:
     - map: ["enum.PoweredLightLayers.Base"]
@@ -87,7 +88,8 @@
   parent: AlwaysPoweredStrobeLight
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Wallmounts/Lighting/strobe_light.rsi #SL Edit
+    sprite: Structures/Wallmounts/Lighting/strobe_light.rsi
+    offset: 0, 1
     state: empty
   - type: AmbientSound
     enabled: false
