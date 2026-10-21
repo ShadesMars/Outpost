@@ -11,3 +11,16 @@ ClockworkGrille: Grille
 ClockworkGrilleDiagonal: GrilleDiagonal
 MetalDoor: SilverDoor
 BananiumDoor: SilverDoor
+AsteroidRockBananium: null
+AsteroidRockBananiumCrab: null
+WallRockBasalt: null
+WallRockBasaltTin: null
+WallRockBasaltQuartz: null
+WallRockBasaltCoal: null
+WallRockBasaltSalt: null
+WallRockBasaltGold: null
+WallRockBasaltSilver: null
+WallRockBasaltPlasma: null
+WallRockBasaltUranium: null
+WallRockBasaltDiamond: null
+WallRockBasaltArtifactFragment: null

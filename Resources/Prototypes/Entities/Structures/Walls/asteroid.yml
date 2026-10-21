@@ -14,7 +14,6 @@
     key: stone
     additionalKeys:
     - doors
-    index: 0
     base: stone
   - type: Icon
     sprite: Structures/Walls/stone.rsi
@@ -548,7 +547,6 @@
         acts: ["Destruction"]
   - type: IconSmooth
     key: stone
-    index: 0
     base: stone
   - type: Icon
     sprite: Structures/Walls/stone-dirt.rsi

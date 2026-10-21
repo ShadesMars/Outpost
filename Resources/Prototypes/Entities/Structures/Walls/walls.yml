@@ -76,7 +76,6 @@
     - Wall
     - Diagonal
   - type: IconSmooth
-    index: 0
     mode: Diagonal
     key: walls
     base: state

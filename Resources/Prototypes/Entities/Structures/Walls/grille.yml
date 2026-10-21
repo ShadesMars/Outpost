@@ -33,7 +33,6 @@
     - type: PlacementReplacement
       key: grilles
     - type: IconSmooth
-      index: 0
       key: walls
       base: grille
     - type: Construction
@@ -156,7 +155,6 @@
     sprite: Structures/Walls/grille-diagonal.rsi
     state: state0
   - type: IconSmooth
-    index: 0
     mode: Diagonal
     key: walls
     base: state
