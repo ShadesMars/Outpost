@@ -94,9 +94,6 @@
       state: rock_dark_north
     - map: [ "enum.EdgeLayer.West" ]
       state: rock_dark_west
-    - state: rock_phoron
-      sprite: Structures/Walls/rock.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
 
 - type: entity
   id: WallTrash

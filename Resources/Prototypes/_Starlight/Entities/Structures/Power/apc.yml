@@ -28,7 +28,7 @@
       shader: unshaded
       map: ["enum.ApcVisualLayers.PanelLock"]
       visible: false
-    - state: channel-disconnectedd #when these are implemented get actual sprites.
+    - state: channel-disconnected #when these are implemented get actual sprites.
       shader: unshaded
       map: ["enum.ApcVisualLayers.Equipment"]
       visible: false

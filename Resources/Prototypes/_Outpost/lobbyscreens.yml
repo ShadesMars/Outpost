@@ -1,5 +1,5 @@
 - type: lobbyBackground
-  id: AuroraCaelus
-  background: /Textures/_Starlight/LobbyScreens/AuroraCaelus.webp
-  title: lobby-state-background-aeuroracaelus-title
-  artist: lobby-state-background-aeuroracaelus-artist
+  id: Outpost21
+  background: /Textures/_Outpost/LobbyScreens/Outpost21.webp
+  title: lobby-state-background-outpost21-title
+  artist: lobby-state-background-outpost21-artist

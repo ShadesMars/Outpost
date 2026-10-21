@@ -146,7 +146,7 @@
   suffix: Mining
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
   - type: Wires
     layoutId: AirlockCargo
   - type: Paintable
@@ -159,7 +159,7 @@
   suffix: Salvage, Mining
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
   - type: Wires
     layoutId: AirlockCargo
   - type: Paintable

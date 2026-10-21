@@ -103,7 +103,7 @@
   suffix: Salvage
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
     state: "assembly"
 
 - type: entity
@@ -122,7 +122,7 @@
   suffix: Mining
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
     state: "assembly"
 
 - type: entity
@@ -141,7 +141,7 @@
   suffix: Salvage, Mining
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
     state: "assembly"
 
 - type: entity
