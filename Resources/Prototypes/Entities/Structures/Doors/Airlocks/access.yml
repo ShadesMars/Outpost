@@ -1237,7 +1237,6 @@
   - type: Docking
     radarColor: "#B22222"
     highlightedRadarColor: Red
-    dockLegendCategory: Arrivals
 
 - type: entity
   name: cargo airlock
@@ -1251,7 +1250,6 @@
   - type: Docking
     radarColor: "#FFFF9F"
     highlightedRadarColor: LightYellow
-    dockLegendCategory: Cargo
 
 - type: entity
   parent: AirlockGlassShuttle
