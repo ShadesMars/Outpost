@@ -23,7 +23,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
 
 # Brigmedic
 - type: entity
@@ -351,7 +351,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
 
 # Service
 - type: entity
@@ -609,7 +609,7 @@
   suffix: Communist, Locked
   components:
     - type: Sprite
-      sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+      sprite: _Starlight/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
 
 - type: entity
   parent: AirlockHatch
@@ -716,7 +716,7 @@
   suffix: Wizard, Locked
   components:
     - type: Sprite
-      sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+      sprite: _Starlight/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
 
 - type: entity
   parent: AirlockHatch
@@ -823,7 +823,7 @@
   suffix: Blackstar, Locked
   components:
     - type: Sprite
-      sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+      sprite: _Starlight/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
 
 - type: entity
   parent: AirlockHatch
