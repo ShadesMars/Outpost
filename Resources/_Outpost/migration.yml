@@ -39,3 +39,10 @@ TurnstileGenpopLeave: null
 TurnstileSecurity: null
 TurnstileCommand: null
 TurnstileCentCommCommand: null
+WindoorSecureSecurityInternalAffairsLocked: null
+LockableButtonInternalAffairs: null
+HolopadSecurityInternalAffairs: null
+AirlockMaintInternalAffairsLocked: null
+AirlockInternalAffairsLocked: null
+DoorElectronicsSecurityInternalAffairs: null
+DoorElectronicsInternalAffairs: null

@@ -39,10 +39,3 @@
   name: stack-reinforced-uranium-glass
   icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: ruglass }
   spawn: SheetRUGlass1
-
-- type: stack
-  parent: BaseSheetStack
-  id: ClockworkGlass
-  name: stack-clockwork-glass
-  icon: { sprite: /Textures/Objects/Materials/Sheets/glass.rsi, state: cglass }
-  spawn: SheetClockworkGlass1

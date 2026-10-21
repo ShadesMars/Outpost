@@ -25,19 +25,6 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: ClockworkGirder
-  graph: ClockworkGirder
-  startNode: start
-  targetNode: clockGirder
-  category: construction-category-structures
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canRotate: false
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
   id: Wall
   graph: Girder
   startNode: start
@@ -326,34 +313,6 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: false
-
-- type: construction
-  id: ClockworkWindow
-  graph: Window
-  startNode: start
-  targetNode: clockworkWindow
-  category: construction-category-structures
-  canBuildInImpassable: true
-  conditions:
-    - !type:EmptyOrWindowValidInTile
-    - !type:NoWindowsInTile
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canRotate: false
-
-- type: construction
-  id: ClockworkWindowDiagonal
-  name: construction-recipe-clockwork-window-diagonal
-  graph: WindowDiagonal
-  startNode: start
-  targetNode: clockworkWindowDiagonal
-  category: construction-category-structures
-  canBuildInImpassable: true
-  conditions:
-    - !type:EmptyOrWindowValidInTile
-    - !type:NoWindowsInTile
-  objectType: Structure
-  placementMode: SnapgridCenter
 
 - type: construction
   id: PlasmaWindow
