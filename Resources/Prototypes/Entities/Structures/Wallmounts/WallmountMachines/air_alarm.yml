@@ -73,13 +73,14 @@
   - type: Appearance
   - type: WiresVisuals
   - type: Sprite
-    sprite: Structures/Wallmounts/air_monitors.rsi
+    sprite: Structures/Wallmounts/air-alarm.rsi
+    offset: 0, -0.25
     layers:
-    - state: alarmp
+    - state: base
       map: ["airAlarmBase"]
     - state: alarm0
       map: ["airAlarmState"] # TODO: fire alarm enum
-    - state: alarmx
+    - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Construction
     graph: AirAlarm
@@ -125,17 +126,18 @@
   description: An air alarm. Doesn't look like it'll be alarming air any time soon.
   components:
   - type: Sprite
-    sprite: Structures/Wallmounts/air_monitors.rsi
+    sprite: Structures/Wallmounts/air-alarm.rsi
+    offset: 0, -0.25
     layers:
-    - state: alarm_b1
+    - state: base
       map: [ "enum.ConstructionVisuals.Layer" ]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          assembly: { state: alarm_b1 }
-          electronics: { state: alarm_b1 }
+          assembly: { state: base }
+          electronics: { state: base }
   - type: Construction
     graph: AirAlarm
     node: assembly
