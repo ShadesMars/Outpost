@@ -316244,9 +316244,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 24.5,34.5
-    - type: Construction
-      step: 1
-      edge: 0
     - type: AccessReader
       accessListsOriginal:
       - - Security

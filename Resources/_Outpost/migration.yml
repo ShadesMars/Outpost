@@ -38,3 +38,4 @@ TurnstileGenpopEnter: null
 TurnstileGenpopLeave: null
 TurnstileSecurity: null
 TurnstileCommand: null
+TurnstileCentCommCommand: null

@@ -33,6 +33,8 @@
   name: darkstone
   parent: WallRock
   components:
+  - type: IconSmooth
+    enabled: false
   - type: Icon
     sprite: _Starlight/Structures/Walls/rock.rsi
     state: rock_dark
