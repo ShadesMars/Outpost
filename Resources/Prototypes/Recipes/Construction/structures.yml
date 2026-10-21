@@ -613,18 +613,6 @@
     - !type:TileNotBlocked
 
 - type: construction
-  id: Turnstile
-  graph: Turnstile
-  startNode: start
-  targetNode: turnstile
-  category: construction-category-structures
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-  - !type:TileNotBlocked
-
-- type: construction
   id: Shutters
   graph: Shutters
   startNode: start
