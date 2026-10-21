@@ -32,3 +32,8 @@ AirAlarmXeno: null
 AirAlarmAssemblyXeno: null
 FireAlarmXeno: null
 FireAlarmAssemblyXeno: null
+AirlockInternalAffairsGlassLocked: null
+ClockworkGrilleBroken: null
+TurnstileGenpopEnter: null
+TurnstileGenpopLeave: null
+TurnstileSecurity: null
