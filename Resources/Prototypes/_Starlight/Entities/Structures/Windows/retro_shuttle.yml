@@ -69,7 +69,7 @@
     state: state0
   - type: IconSmooth
     mode: Diagonal
-    key: walls
+    key: windows
     base: state
   - type: Icon
     sprite: _Starlight/Structures/Windows/retro_shuttle_diagonal.rsi

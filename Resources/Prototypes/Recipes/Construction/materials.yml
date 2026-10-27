@@ -15,6 +15,14 @@
   objectType: Item
 
 - type: construction
+  id: SheetClockworkGlass
+  graph: Glass
+  startNode: start
+  targetNode: SheetClockworkGlass
+  category: construction-category-materials
+  objectType: Item
+
+- type: construction
   id: SheetPGlass
   graph: Glass
   startNode: start

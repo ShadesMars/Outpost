@@ -1,6 +1,6 @@
 - type: entity
   id: BaseShutter
-  parent: BaseStructure
+  parent: [ BaseStructure, BaseStructureDissolvable ] # Starlight-edit
   name: shutter
   abstract: true
   description: One shudders to think about what might be behind this shutter.
@@ -48,11 +48,11 @@
     bumpOpen: false
     clickOpen: false
     closeTimeOne: 0.2
-    closeTimeTwo: 0.8
-    openTimeOne: 0.2
-    openTimeTwo: 0.8
-    openingAnimationTime: 1
-    closingAnimationTime: 1
+    closeTimeTwo: 1.2
+    openTimeOne: 1.2
+    openTimeTwo: 0.2
+    openingAnimationTime: 1.4
+    closingAnimationTime: 1.4
     crushDamage:
       types:
         Blunt: 5 # getting shutters closed on you probably doesn't hurt that much
@@ -71,10 +71,8 @@
   - type: RadiationBlocker
     resistance: 2
   - type: Damageable
-    damageModifierSet: StructuralMetallic
     damageContainer: StructuralInorganic
-  # - type: Injurable
-  #   damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
   - type: Destructible
     thresholds:
     - trigger:
@@ -105,11 +103,6 @@
     interactSuccessSound:
       collection: FenceRattle
   - type: BlockWeather
-  - type: PlacementReplacement
-    key: shutters
-  - type: IconSmooth
-    key: walls
-    mode: NoSprite
 
 - type: entity
   id: ShuttersNormal
@@ -142,10 +135,10 @@
   id: ShuttersRadiation
   parent: [BaseDeltaPressureGlass, BaseShutter]
   name: radiation shutters
-  description: These come with extra-radiation-resistant paint.
+  description: Why did they make these shutters radioactive?
   components:
   - type: Sprite
-    sprite: Structures/Doors/Shutters/shutters-radiation.rsi
+    sprite: Structures/Doors/Shutters/shutters_radiation.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
@@ -183,7 +176,7 @@
   description: The Best (TM) place to see your friends explode!
   components:
   - type: Sprite
-    sprite: Structures/Doors/Shutters/shutters-window.rsi
+    sprite: Structures/Doors/Shutters/shutters_window.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
@@ -220,7 +213,7 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Shutters/shutters.rsi
-    state: assembly
+    state: frame
   - type: Construction
     graph: Shutters
     node: frame1
@@ -228,10 +221,8 @@
     - board
   - type: InteractionOutline
   - type: Damageable
-    damageModifierSet: Metallic
     damageContainer: StructuralInorganic
-  # - type: Injurable
-  #   damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
   - type: Destructible
     thresholds:
     - trigger:

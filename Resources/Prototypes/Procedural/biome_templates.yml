@@ -278,7 +278,7 @@
         cellularDistanceFunction: Euclidean
         cellularReturnType: Distance2
       entities:
-        - AsteroidRock
+        - WallRockBasalt
     - !type:BiomeDummyLayer
       id: Loot
     # Fill basalt

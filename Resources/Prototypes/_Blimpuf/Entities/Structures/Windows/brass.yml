@@ -78,7 +78,7 @@
         acts: [ "Destruction" ]
   - type: Airtight
   - type: IconSmooth
-    key: walls
+    key: windows
     base: window
   - type: InteractionPopup
     interactSuccessString: comp-window-knock
@@ -118,7 +118,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: walls
+    key: windows
     base: state
   - type: Icon
     sprite: _Blimpuf/Structures/Windows/brass_window_diagonal.rsi

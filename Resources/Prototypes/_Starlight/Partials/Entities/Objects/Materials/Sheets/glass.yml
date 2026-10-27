@@ -48,6 +48,15 @@
     category: ReinforcedUraniumGlass
 
 - type: !PartialOnly entity
+  id: SheetClockworkGlass
+  components:
+  - type: FloorTile
+    outputs:
+    - FloorGlassBronze
+  - type: QuickConstructable
+    category: ClockworkGlass
+
+- type: !PartialOnly entity
   id: SheetGlassBase
   components:
   - type: EmitSoundOnPickup

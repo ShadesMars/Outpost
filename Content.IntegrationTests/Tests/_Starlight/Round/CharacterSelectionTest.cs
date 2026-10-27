@@ -17,7 +17,6 @@ using Robust.Shared.Utility;
 namespace Content.IntegrationTests.Tests._Starlight.Round;
 
 [TestFixture]
-[Ignore("Disabled - Not same job")]
 public sealed class CharacterSelectionTest : GameTest
 {
     public override PoolSettings PoolSettings => new()

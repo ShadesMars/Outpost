@@ -75,7 +75,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: walls
+    key: windows
     base: state
   - type: Icon
     sprite: _Blimpuf/Structures/Windows/reinforced_brass_window_diagonal.rsi
