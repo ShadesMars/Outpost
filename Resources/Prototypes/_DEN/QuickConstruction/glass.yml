@@ -44,3 +44,10 @@
     - ReinforcedPlasmaWindow
     - ReinforcedPlasmaWindowDiagonal
     - PlasmaReinforcedWindowDirectional
+
+- type: quickConstructionCategory
+  id: ClockworkGlass
+  constructionEntries:
+    - ClockworkWindow
+    - ClockworkWindowDiagonal
+    - WindowClockworkDirectional

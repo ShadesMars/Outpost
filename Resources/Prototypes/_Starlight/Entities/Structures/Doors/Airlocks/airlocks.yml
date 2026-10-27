@@ -113,7 +113,7 @@
   suffix: Salvage
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
+    sprite: Structures/Doors/Airlocks/Glass/mining.rsi
   - type: Paintable
     group: AirlockGlass
 
@@ -123,7 +123,7 @@
   suffix: Salvage
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
+    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
   - type: Wires
     layoutId: AirlockCargo
   - type: Paintable
@@ -136,7 +136,7 @@
   suffix: Mining
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
+    sprite: Structures/Doors/Airlocks/Glass/mining.rsi
   - type: Paintable
     group: AirlockGlass
 
@@ -146,7 +146,7 @@
   suffix: Mining
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
+    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
   - type: Wires
     layoutId: AirlockCargo
   - type: Paintable
@@ -159,7 +159,7 @@
   suffix: Salvage, Mining
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
+    sprite: Structures/Doors/Airlocks/Standard/mining.rsi
   - type: Wires
     layoutId: AirlockCargo
   - type: Paintable
@@ -171,7 +171,7 @@
   suffix: Salvage, Mining
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mining_cargo.rsi
+    sprite: Structures/Doors/Airlocks/Glass/mining.rsi
   - type: Paintable
     group: AirlockGlass
 

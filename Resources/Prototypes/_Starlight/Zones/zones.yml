@@ -36,6 +36,7 @@
   - AirlockCentralCommand
   - AirlockCentralCommandGlass
   - HighSecCommandLocked
+  - TurnstileCommand
   - HighSecCaptainLocked
   - HighSecCentralCommandLocked
 
@@ -61,6 +62,10 @@
   - AirlockBrigmed
   - AirlockBrigmedGlass
   - HighSecArmoryLocked
+  - TurnstileGenpopEnter
+  - TurnstileGenpopLeave
+  - TurnstileSecurity
+  - TurnstileArmory
   - WindoorSecurityLocked
 
 - type: zone
