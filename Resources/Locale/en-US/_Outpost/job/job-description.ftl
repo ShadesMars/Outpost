@@ -1,2 +1,5 @@
 job-description-sitedirector = The Site Director manages the other Command Staff, and through them the rest of the station. Though they have access to everything, they do not understand everything, and are expected to delegate tasks to the appropriate crew member. The Site Director is expected to have an understanding of Standard Operating Procedure, and is subject to it, and legal action, in the same way as every other crew member.
 job-outpost-description-hop = The Head of Personnel manages the Service department and most other civilians. They also manage the Supply department, through the Quartermaster. In addition, the Head of Personnel oversees the personal accounts of the crew, including their money and access. If necessary, the Head of Personnel is first in line to assume Acting Command.
+job-outpost-description-qm = The Quartermaster manages the Supply department, checking cargo orders and ensuring supplies get to where they are needed.
+job-outpost-description-cargotech = A Cargo Technician fills and delivers cargo orders.
+job-outpost-description-shaftminer = A Shaft Miner mines and processes minerals to be delivered to departments that need them.

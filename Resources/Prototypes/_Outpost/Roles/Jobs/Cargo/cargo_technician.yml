@@ -1,0 +1,35 @@
+- type: job
+  id: OutpostCargoTechnician
+  name: job-name-cargotech
+  description: job-outpost-description-cargotech
+  playTimeTracker: OutpostJobCargoTechnician
+  icon: "JobIconCargoTechnician"
+  supervisors: job-supervisors-outpost-qm-hop
+  access:
+  - Cargo
+  extendedAccess:
+  - Mining
+  ranks:
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobCargoTechnician
+        time: 60h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobCargoTechnician
+        time: 40h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobCargoTechnician
+        time: 20h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobCargoTechnician
+        time: 10h
+    RankPrivate:
+      - !type:RoleTimeRequirement
+        role: OutpostJobCargoTechnician
+        time: 2h
+    RankRecruit: []
+  setPreference: true
+  setRankPreference: true

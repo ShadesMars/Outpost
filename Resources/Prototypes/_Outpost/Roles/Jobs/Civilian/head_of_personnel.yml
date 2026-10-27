@@ -7,11 +7,23 @@
     - !type:DepartmentTimeRequirement
       department: OutpostCivilian
       time: 20h
+    - !type:RoleTimeRequirement
+      role: OutpostQuartermaster
+      time: 5h
   icon: "JobIconHeadOfPersonnel"
   supervisors: job-supervisors-outpost-sitedirector
   access:
     - Command
     - HeadOfPersonnel
+    - Bar
+    - Service
+    - Janitor
+    - Kitchen
+    - Chapel
+    - Hydroponics
+    - Cargo
+    - Mining
+    - Quartermaster
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]

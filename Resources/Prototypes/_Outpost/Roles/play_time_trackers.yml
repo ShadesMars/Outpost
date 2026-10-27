@@ -7,3 +7,12 @@
 
 - type: playTimeTracker
   id: OutpostJobHeadOfPersonnel
+
+- type: playTimeTracker
+  id: OutpostJobQuartermaster
+
+- type: playTimeTracker
+  id: OutpostJobCargoTechnician
+
+- type: playTimeTracker
+  id: OutpostJobShaftMiner

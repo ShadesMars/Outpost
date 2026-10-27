@@ -7,6 +7,7 @@
   roles:
   - OutpostSiteDirector
   - OutpostHeadOfPersonnel
+  - OutpostQuartermaster
   primary: false
 
 - type: department
@@ -16,7 +17,9 @@
   color: "#BB9040"
   weight: 2
   roles:
-  - OutpostHeadOfPersonnel
+  - OutpostQuartermaster
+  - OutpostShaftMiner
+  - OutpostCargoTechnician
 
 - type: department
   id: OutpostCivilian
