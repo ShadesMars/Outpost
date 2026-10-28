@@ -3,7 +3,7 @@
   name: job-name-visitor
   description: job-description-visitor
   playTimeTracker: OutpostJobVisitor
-  icon: "JobIconVisitor"
+  icon: "JobIconOutpostVisitor"
   supervisors: job-supervisors-everyone
   displayWeight: -1
   ranks:

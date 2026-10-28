@@ -11,7 +11,7 @@
       time: 2h
     - !type:OverallPlaytimeRequirement
       time: 5h
-  icon: "JobIconMiningSpecialist"
+  icon: "JobIconOutpostShaftMiner"
   supervisors: job-supervisors-outpost-qm-hop
   access:
   - Cargo
@@ -38,6 +38,10 @@
       - !type:RoleTimeRequirement
         role: OutpostJobShaftMiner
         time: 10h
-    RankRecruit: []
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobShaftMiner
+        time: 10h
+        inverted: true
   setPreference: true
   setRankPreference: true

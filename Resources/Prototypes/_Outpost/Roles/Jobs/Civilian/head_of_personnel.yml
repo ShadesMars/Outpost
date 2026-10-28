@@ -12,7 +12,7 @@
       time: 5h
     - !type:OverallPlaytimeRequirement
       time: 40h
-  icon: "JobIconHeadOfPersonnel"
+  icon: "JobIconOutpostHeadofPersonnel"
   supervisors: job-supervisors-outpost-sitedirector
   access:
     - Command

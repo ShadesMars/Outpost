@@ -9,7 +9,7 @@
       time: 20h
     - !type:OverallPlaytimeRequirement
       time: 40h
-  icon: "JobIconQuartermaster"
+  icon: "JobIconOutpostQuartermaster"
   supervisors: job-supervisors-outpost-hop
   access:
   - Cargo

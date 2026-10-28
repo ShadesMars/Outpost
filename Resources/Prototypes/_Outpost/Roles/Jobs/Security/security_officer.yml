@@ -6,7 +6,7 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 15h
-  icon: "JobIconSecurityOfficer"
+  icon: "JobIconOutpostSecurityOfficer"
   supervisors: job-supervisors-hos
   access:
   - Security
@@ -35,6 +35,10 @@
       - !type:RoleTimeRequirement
         role: OutpostJobSecurityOfficer
         time: 10h
-    RankRecruit: []
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 10h
+        inverted: true
   setPreference: true
   setRankPreference: true

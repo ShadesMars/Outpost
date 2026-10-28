@@ -3,7 +3,7 @@
   name: job-name-cargotech
   description: job-outpost-description-cargotech
   playTimeTracker: OutpostJobCargoTechnician
-  icon: "JobIconCargoTechnician"
+  icon: "JobIconOutpostCargoTechnician"
   supervisors: job-supervisors-outpost-qm-hop
   access:
   - Cargo
@@ -28,6 +28,10 @@
       - !type:RoleTimeRequirement
         role: OutpostJobCargoTechnician
         time: 10h
-    RankRecruit: []
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobCargoTechnician
+        time: 10h
+        inverted: true
   setPreference: true
   setRankPreference: true

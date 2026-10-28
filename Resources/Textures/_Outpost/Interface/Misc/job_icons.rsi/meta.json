@@ -1,0 +1,44 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from: https://github.com/ParadiseSS13/Paradise",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "SiteDirector"
+        },
+        {
+            "name": "Unknown"
+        },
+        {
+            "name": "NoId"
+        },
+        {
+            "name": "Visitor"
+        },
+        {
+            "name": "HeadofPersonnel"
+        },
+        {
+            "name": "CargoTech"
+        },
+        {
+            "name": "HeadofSecurity"
+        },
+        {
+            "name": "Quartermaster"
+        },
+        {
+            "name": "SecurityOfficer"
+        },
+        {
+            "name": "ShaftMiner"
+        },
+        {
+            "name": "Warden"
+        }
+    ]
+}

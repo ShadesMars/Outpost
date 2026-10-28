@@ -1,0 +1,98 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostSiteDirector
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: SiteDirector
+  jobName: job-name-sitedirector
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostVisitor
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Visitor
+  jobName: job-name-visitor
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostCargoTechnician
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: CargoTech
+  jobName: job-name-cargotech
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostQuartermaster
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Quartermaster
+  jobName: job-name-qm
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostShaftMiner
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: ShaftMiner
+  jobName: job-name-shaftminer
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostHeadofPersonnel
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: HeadofPersonnel
+  jobName: job-name-hop
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostHeadofSecurity
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: HeadofSecurity
+  jobName: job-name-hos
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostSecurityOfficer
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: SecurityOfficer
+  jobName: job-name-security
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostWarden
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Warden
+  jobName: job-name-warden
+  tags:
+  - JobIconCrew
+  allowSelection: true

@@ -4,7 +4,7 @@
   description: job-description-sitedirector
   playTimeTracker: OutpostJobSiteDirector
   whitelisted: true
-  icon: "JobIconCaptain"
+  icon: "JobIconOutpostSiteDirector"
   joinNotifyCrew: true
   supervisors: job-supervisors-outpost-company
   accessGroups:

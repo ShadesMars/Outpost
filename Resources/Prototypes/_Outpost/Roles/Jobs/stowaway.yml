@@ -4,7 +4,7 @@
   description: job-outpost-description-stowaway
   playTimeTracker: OutpostJobStowaway
   whitelisted: true
-  icon: "JobIconNoId"
+  icon: "JobIconUnknown"
   supervisors: job-supervisors-everyone
   displayWeight: -2
   setPreference: true

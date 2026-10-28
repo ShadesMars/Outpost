@@ -7,7 +7,7 @@
     - !type:DepartmentTimeRequirement
       department: OutpostSecurity
       time: 20h
-  icon: "JobIconWarden"
+  icon: "JobIconOutpostWarden"
   supervisors: job-supervisors-hos
   access:
   - Armory
