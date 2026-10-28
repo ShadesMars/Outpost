@@ -25,3 +25,6 @@
 
 - type: playTimeTracker
   id: OutpostJobSecurityOfficer
+
+- type: playTimeTracker
+  id: OutpostJobStowaway

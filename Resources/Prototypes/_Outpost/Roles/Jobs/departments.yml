@@ -42,3 +42,12 @@
   roles:
   - OutpostHeadOfPersonnel
   - OutpostVisitor
+
+- type: department
+  id: OutpostMiscellaneous
+  name: department-Miscellaneous
+  description: department-Miscellaneous-description
+  color: "#666666"
+  weight: -5
+  roles:
+  - OutpostStowaway

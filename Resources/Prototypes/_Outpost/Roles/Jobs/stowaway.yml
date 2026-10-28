@@ -1,0 +1,10 @@
+- type: job
+  id: OutpostStowaway
+  name: job-name-stowaway
+  description: job-outpost-description-stowaway
+  playTimeTracker: OutpostJobStowaway
+  whitelisted: true
+  icon: "JobIconNoId"
+  supervisors: job-supervisors-everyone
+  displayWeight: -2
+  setPreference: true
