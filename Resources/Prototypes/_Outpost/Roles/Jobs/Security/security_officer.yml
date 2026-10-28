@@ -5,7 +5,7 @@
   playTimeTracker: OutpostJobSecurityOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 15h
+      time: 10h
   icon: "JobIconOutpostSecurityOfficer"
   supervisors: job-supervisors-hos
   access:

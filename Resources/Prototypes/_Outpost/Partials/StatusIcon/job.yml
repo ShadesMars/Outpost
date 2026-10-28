@@ -30,3 +30,18 @@
   icon:
     sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
     state: Unknown
+
+- type: !PartialOnly jobIcon
+  id: JobIconStationAi
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: StationAi
+  allowSelection: true
+
+- type: !PartialOnly jobIcon
+  parent: JobIcon
+  id: JobIconBorg
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Borg
+  allowSelection: true

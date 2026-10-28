@@ -27,13 +27,14 @@
     - Mining
     - Quartermaster
     - External
+    - Journalism
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]
     - !type:AddComponentSpecial
       components:
         - type: CommandStaff
-  displayWeight: 2
+  displayWeight: 3
   ranks:
     RankCaptain:
       - !type:RoleTimeRequirement

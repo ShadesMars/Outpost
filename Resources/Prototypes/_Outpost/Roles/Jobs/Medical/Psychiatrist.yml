@@ -1,0 +1,25 @@
+- type: job
+  id: OutpostPsychiatrist
+  name: job-name-psychiatrist
+  description: job-outpost-description-psychiatrist
+  playTimeTracker: OutpostJobPsychiatrist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostMedical
+      time: 10h
+  icon: "JobIconOutpostPsychiatrist"
+  supervisors: job-supervisors-cmo
+  access:
+  - Medical
+  ranks:
+    RankSecondLieutenant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 70h
+    RankChiefWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 10h
+    RankWarrantOfficer: []
+  setPreference: true
+  setRankPreference: true

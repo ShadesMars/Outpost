@@ -1,0 +1,26 @@
+- type: job
+  id: OutpostParamedic
+  name: job-name-paramedic
+  description: job-outpost-description-paramedic
+  playTimeTracker: OutpostJobParamedic
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostMedical
+      time: 10h
+  icon: "JobIconOutpostParamedic"
+  supervisors: job-supervisors-cmo
+  access:
+  - Medical
+  - External
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobParamedic
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobParamedic
+        time: 10h
+    RankSergeant: []
+  setPreference: true
+  setRankPreference: true

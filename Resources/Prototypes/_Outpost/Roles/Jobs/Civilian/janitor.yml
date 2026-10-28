@@ -1,0 +1,38 @@
+- type: job
+  id: OutpostJanitor
+  name: job-name-janitor
+  description: job-outpost-description-janitor
+  playTimeTracker: OutpostJobJanitor
+  icon: "JobIconOutpostJanitor"
+  supervisors: job-supervisors-outpost-hop
+  access:
+  - Service
+  - Janitor
+  ranks:
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobJanitor
+        time: 70h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobJanitor
+        time: 50h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobJanitor
+        time: 30h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobJanitor
+        time: 20h
+    RankPrivate:
+      - !type:RoleTimeRequirement
+        role: OutpostJobJanitor
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobJanitor
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true

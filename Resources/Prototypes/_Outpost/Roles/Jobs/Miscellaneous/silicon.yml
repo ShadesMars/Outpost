@@ -1,0 +1,38 @@
+- type: job
+  id: OutpostStationAi
+  name: job-name-station-ai
+  description: job-outpost-description-ai
+  playTimeTracker: OutpostJobStationAi
+  requirements:
+  - !type:RoleTimeRequirement
+    role: OutpostJobBorg
+    time: 5h
+  displayWeight: 1
+  icon: JobIconStationAi
+  supervisors: job-supervisors-outpost-laws
+  jobEntity: StationAiBrain
+  jobPreviewEntity: PlayerStationAiPreview
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: SkipLoadingCharacterRecords
+  applyTraits: false
+  setPreference: true
+
+- type: job
+  id: OutpostBorg
+  name: job-name-borg
+  description: job-outpost-description-borg
+  playTimeTracker: OutpostJobBorg
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10h
+  icon: JobIconBorg
+  supervisors: job-supervisors-outpost-laws-ai
+  jobEntity: PlayerBorgChassis
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: SkipLoadingCharacterRecords
+  applyTraits: false
+  setPreference: true

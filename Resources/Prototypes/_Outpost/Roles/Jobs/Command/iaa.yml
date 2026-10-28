@@ -1,0 +1,39 @@
+- type: job
+  id: OutpostIAA
+  name: job-name-iaa
+  description: job-outpost-description-iaa
+  playTimeTracker: OutpostJobIAA
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostCommand
+      time: 10h
+    - !type:DepartmentTimeRequirement
+      department: OutpostSecurity
+      time: 10h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
+  icon: "JobIconOutpostIAA"
+  supervisors: job-supervisors-outpost-company
+  access:
+    - Service
+    - Command
+    - IAA
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+  ranks:
+    RankFirstLieutenant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobIAA
+        time: 70h
+    RankSecondLieutenant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobIAA
+        time: 30h
+    RankChiefWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 10h
+    RankWarrantOfficer: []
+  setPreference: true
+  setRankPreference: true

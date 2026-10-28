@@ -1,0 +1,41 @@
+- type: job
+  id: OutpostEngineer
+  name: job-name-engineer
+  description: job-outpost-description-engineer
+  playTimeTracker: OutpostJobEngineer
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10h
+  icon: "JobIconOutpostEngineer"
+  supervisors: job-supervisors-ce
+  access:
+  - Engineering
+  - External
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobEngineer
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobEngineer
+        time: 50h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobEngineer
+        time: 30h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobEngineer
+        time: 20h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobEngineer
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobEngineer
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true

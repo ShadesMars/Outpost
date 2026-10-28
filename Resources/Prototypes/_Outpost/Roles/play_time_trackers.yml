@@ -28,3 +28,57 @@
 
 - type: playTimeTracker
   id: OutpostJobStowaway
+
+- type: playTimeTracker
+  id: OutpostJobBartender
+
+- type: playTimeTracker
+  id: OutpostJobChaplain
+
+- type: playTimeTracker
+  id: OutpostJobChef
+
+- type: playTimeTracker
+  id: JobIconOutpostBotanist
+
+- type: playTimeTracker
+  id: OutpostJobJanitor
+
+- type: playTimeTracker
+  id: OutpostJobIAA
+
+- type: playTimeTracker
+  id: OutpostJobRadioHost
+
+- type: playTimeTracker
+  id: OutpostJobChiefEngineer
+
+- type: playTimeTracker
+  id: OutpostJobEngineer
+
+- type: playTimeTracker
+  id: OutpostJobRoboticist
+
+- type: playTimeTracker
+  id: OutpostJobResearchDirector
+
+- type: playTimeTracker
+  id: OutpostJobScientist
+
+- type: playTimeTracker
+  id: OutpostJobChiefMedicalOfficer
+
+- type: playTimeTracker
+  id: OutpostJobDoctor
+
+- type: playTimeTracker
+  id: OutpostJobChemist
+
+- type: playTimeTracker
+  id: OutpostJobParamedic
+
+- type: playTimeTracker
+  id: OutpostJobStationAi
+
+- type: playTimeTracker
+  id: OutpostJobBorg

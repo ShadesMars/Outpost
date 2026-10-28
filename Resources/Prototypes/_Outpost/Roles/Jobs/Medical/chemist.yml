@@ -1,0 +1,26 @@
+- type: job
+  id: OutpostChemist
+  name: job-name-chemist
+  description: job-outpost-description-chemist
+  playTimeTracker: OutpostJobChemist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostMedical
+      time: 10h
+  icon: "JobIconOutpostChemist"
+  supervisors: job-supervisors-cmo
+  access:
+  - Medical
+  - Chemistry
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChemist
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChemist
+        time: 10h
+    RankSergeant: []
+  setPreference: true
+  setRankPreference: true

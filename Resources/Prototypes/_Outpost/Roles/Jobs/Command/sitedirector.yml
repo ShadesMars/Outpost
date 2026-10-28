@@ -15,7 +15,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-  displayWeight: 3
+  displayWeight: 4
   ranks:
     RankMajor:
     - !type:RoleTimeRequirement

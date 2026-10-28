@@ -1,0 +1,40 @@
+- type: job
+  id: OutpostScientist
+  name: job-name-scientist
+  description: job-outpost-description-scientist
+  playTimeTracker: OutpostJobScientist
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10h
+  icon: "JobIconOutpostScientist"
+  supervisors: job-supervisors-rd
+  access:
+  - Research
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobScientist
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobScientist
+        time: 50h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobScientist
+        time: 30h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobScientist
+        time: 20h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobScientist
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobScientist
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true

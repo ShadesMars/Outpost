@@ -1,0 +1,33 @@
+- type: job
+  id: OutpostChiefEngineer
+  name: job-name-ce
+  description: job-outpost-description-ce
+  playTimeTracker: OutpostJobChiefEngineer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostEngineering
+      time: 20h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
+  icon: "JobIconOutpostChiefEngineer"
+  supervisors: job-supervisors-outpost-sitedirector
+  access:
+    - Command
+    - Engineering
+    - External
+    - ChiefEngineer
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+    - !type:AddComponentSpecial
+      components:
+        - type: CommandStaff
+  displayWeight: 2
+  ranks:
+    RankFirstLieutenant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChiefEngineer
+        time: 70h
+    RankSecondLieutenant: []
+  setPreference: true
+  setRankPreference: true

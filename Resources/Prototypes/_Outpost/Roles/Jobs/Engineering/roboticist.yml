@@ -1,0 +1,29 @@
+- type: job
+  id: OutpostRoboticist
+  name: job-name-roboticist
+  description: job-outpost-description-roboticist
+  playTimeTracker: OutpostJobRoboticist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostRnD
+      time: 10h
+    - !type:DepartmentTimeRequirement
+      department: OutpostEngineering
+      time: 10h
+  icon: "JobIconOutpostRoboticist"
+  supervisors: job-supervisors-ce
+  access:
+    - Engineering
+    - Robotics
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobRoboticist
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobRoboticist
+        time: 10h
+    RankSergeant: []
+  setPreference: true
+  setRankPreference: true

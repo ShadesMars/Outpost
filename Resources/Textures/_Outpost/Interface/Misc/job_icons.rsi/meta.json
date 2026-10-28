@@ -39,6 +39,66 @@
         },
         {
             "name": "Warden"
+        },
+        {
+            "name": "Bartender"
+        },
+        {
+            "name": "Chaplain"
+        },
+        {
+            "name": "Chef"
+        },
+        {
+            "name": "Botanist"
+        },
+        {
+            "name": "Janitor"
+        },
+        {
+            "name": "Librarian"
+        },
+        {
+            "name": "IAA"
+        },
+        {
+            "name": "RadioHost"
+        },
+        {
+            "name": "ChiefEngineer"
+        },
+        {
+            "name": "Engineer"
+        },
+        {
+            "name": "Roboticist"
+        },
+        {
+            "name": "ResearchDirector"
+        },
+        {
+            "name": "Scientist"
+        },
+        {
+            "name": "ChiefMedicalOfficer"
+        },
+        {
+            "name": "Doctor"
+        },
+        {
+            "name": "Chemist"
+        },
+        {
+            "name": "Paramedic"
+        },
+        {
+            "name": "Psychiatrist"
+        },
+        {
+            "name": "StationAi"
+        },
+        {
+            "name": "Borg"
         }
     ]
 }

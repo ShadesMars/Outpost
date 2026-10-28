@@ -1,0 +1,38 @@
+- type: job
+  id: OutpostBartender
+  name: job-name-bartender
+  description: job-outpost-description-bartender
+  playTimeTracker: OutpostJobBartender
+  icon: "JobIconOutpostBartender"
+  supervisors: job-supervisors-outpost-hop
+  access:
+  - Service
+  - Bar
+  ranks:
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobBartender
+        time: 70h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobBartender
+        time: 50h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobBartender
+        time: 30h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobBartender
+        time: 20h
+    RankPrivate:
+      - !type:RoleTimeRequirement
+        role: OutpostJobBartender
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobBartender
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true

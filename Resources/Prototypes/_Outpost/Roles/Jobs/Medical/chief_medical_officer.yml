@@ -1,0 +1,37 @@
+- type: job
+  id: OutpostChiefMedicalOfficer
+  name: job-name-cmo
+  description: job-outpost-description-cmo
+  playTimeTracker: OutpostJobChiefMedicalOfficer
+  requirements:
+    - !type:RoleTimeRequirement
+      role: OutpostJobChemist
+      time: 10h
+    - !type:RoleTimeRequirement
+      role: OutpostJobDoctor
+      time: 10h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
+  icon: "JobIconOutpostChiefMedicalOfficer"
+  supervisors: job-supervisors-outpost-sitedirector
+  access:
+  - External
+  - Command
+  - Medical
+  - ChiefMedicalOfficer
+  - Chemistry
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+  displayWeight: 2
+  ranks:
+    RankFirstLieutenant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChiefMedicalOfficer
+        time: 70h
+    RankSecondLieutenant: []
+  setPreference: true
+  setRankPreference: true

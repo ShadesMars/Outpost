@@ -1,0 +1,38 @@
+- type: job
+  id: OutpostRadioHost
+  name: job-name-radiohost
+  description: job-outpost-description-radiohost
+  playTimeTracker: OutpostJobRadioHost
+  icon: "JobIconOutpostRadioHost"
+  supervisors: job-supervisors-outpost-hop
+  access:
+    - Service
+    - Journalism
+  ranks:
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobRadioHost
+        time: 70h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobRadioHost
+        time: 50h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobRadioHost
+        time: 30h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobRadioHost
+        time: 20h
+    RankPrivate:
+      - !type:RoleTimeRequirement
+        role: OutpostJobRadioHost
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobRadioHost
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true
