@@ -7,29 +7,27 @@
   supervisors: job-supervisors-outpost-qm-hop
   access:
   - Cargo
-  extendedAccess:
-  - Mining
   ranks:
     RankStaffSergeant:
       - !type:RoleTimeRequirement
         role: OutpostJobCargoTechnician
-        time: 60h
+        time: 70h
     RankSergeant:
       - !type:RoleTimeRequirement
         role: OutpostJobCargoTechnician
-        time: 40h
+        time: 50h
     RankCorporal:
       - !type:RoleTimeRequirement
         role: OutpostJobCargoTechnician
-        time: 20h
+        time: 30h
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
         role: OutpostJobCargoTechnician
-        time: 10h
+        time: 20h
     RankPrivate:
       - !type:RoleTimeRequirement
         role: OutpostJobCargoTechnician
-        time: 2h
+        time: 10h
     RankRecruit: []
   setPreference: true
   setRankPreference: true

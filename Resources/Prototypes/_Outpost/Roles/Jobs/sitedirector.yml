@@ -20,7 +20,7 @@
     RankMajor:
     - !type:RoleTimeRequirement
       role: OutpostJobSiteDirector
-      time: 60h
+      time: 70h
     RankCaptain: []
   setPreference: true
   setRankPreference: true

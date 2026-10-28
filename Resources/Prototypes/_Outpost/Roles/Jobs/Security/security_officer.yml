@@ -1,0 +1,40 @@
+- type: job
+  id: OutpostSecurityOfficer
+  name: job-name-security
+  description: job-outpost-description-security
+  playTimeTracker: OutpostJobSecurityOfficer
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 15h
+  icon: "JobIconSecurityOfficer"
+  supervisors: job-supervisors-hos
+  access:
+  - Security
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  ranks:
+    RankChiefWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 70h
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 50h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 30h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 20h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobSecurityOfficer
+        time: 10h
+    RankRecruit: []
+  setPreference: true
+  setRankPreference: true

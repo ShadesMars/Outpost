@@ -10,6 +10,8 @@
     - !type:RoleTimeRequirement
       role: OutpostQuartermaster
       time: 5h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
   icon: "JobIconHeadOfPersonnel"
   supervisors: job-supervisors-outpost-sitedirector
   access:
@@ -24,6 +26,7 @@
     - Cargo
     - Mining
     - Quartermaster
+    - External
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]
@@ -35,7 +38,7 @@
     RankCaptain:
       - !type:RoleTimeRequirement
         role: OutpostJobHeadOfPersonnel
-        time: 60h
+        time: 70h
     RankFirstLieutenant: []
   setPreference: true
   setRankPreference: true

@@ -16,27 +16,28 @@
   access:
   - Cargo
   - Mining
+  - External
   ranks:
     RankWarrantOfficer:
       - !type:RoleTimeRequirement
         role: OutpostJobShaftMiner
-        time: 60h
+        time: 70h
     RankStaffSergeant:
       - !type:RoleTimeRequirement
         role: OutpostJobShaftMiner
-        time: 40h
+        time: 50h
     RankSergeant:
       - !type:RoleTimeRequirement
         role: OutpostJobShaftMiner
-        time: 20h
+        time: 30h
     RankCorporal:
       - !type:RoleTimeRequirement
         role: OutpostJobShaftMiner
-        time: 10h
+        time: 20h
     RankPrivateFirstClass:
       - !type:RoleTimeRequirement
         role: OutpostJobShaftMiner
-        time: 2h
+        time: 10h
     RankRecruit: []
   setPreference: true
   setRankPreference: true

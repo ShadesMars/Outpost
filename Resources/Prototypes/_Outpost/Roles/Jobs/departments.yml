@@ -7,8 +7,20 @@
   roles:
   - OutpostSiteDirector
   - OutpostHeadOfPersonnel
+  - OutpostHeadOfSecurity
   - OutpostQuartermaster
   primary: false
+
+- type: department
+  id: OutpostSecurity
+  name: department-Security
+  description: department-Security-description
+  color: "#8E0000"
+  weight: 6
+  roles:
+  - OutpostHeadOfSecurity
+  - OutpostWarden
+  - OutpostSecurityOfficer
 
 - type: department
   id: OutpostCargo

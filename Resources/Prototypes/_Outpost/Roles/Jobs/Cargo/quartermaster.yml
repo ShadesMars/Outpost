@@ -7,6 +7,8 @@
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 20h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
   icon: "JobIconQuartermaster"
   supervisors: job-supervisors-outpost-hop
   access:
@@ -14,6 +16,7 @@
   - Mining
   - Quartermaster
   - Command
+  - External
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -25,11 +28,11 @@
     RankSecondLieutenant:
       - !type:RoleTimeRequirement
         role: OutpostJobQuartermaster
-        time: 60h
+        time: 70h
     RankChiefWarrantOfficer:
       - !type:RoleTimeRequirement
         role: OutpostJobQuartermaster
-        time: 5h
+        time: 10h
     RankWarrantOfficer: []
   setPreference: true
   setRankPreference: true

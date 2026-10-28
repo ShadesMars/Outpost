@@ -16,3 +16,12 @@
 
 - type: playTimeTracker
   id: OutpostJobShaftMiner
+
+- type: playTimeTracker
+  id: OutpostJobHeadOfSecurity
+
+- type: playTimeTracker
+  id: OutpostJobWarden
+
+- type: playTimeTracker
+  id: OutpostJobSecurityOfficer
