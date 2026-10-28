@@ -1,5 +1,3 @@
-# Shaft Miner
-
 - type: job
   id: OutpostShaftMiner
   name: job-name-shaftminer
@@ -7,10 +5,8 @@
   playTimeTracker: OutpostJobShaftMiner
   requirements:
     - !type:DepartmentTimeRequirement
-      department: Cargo
-      time: 2h
-    - !type:OverallPlaytimeRequirement
-      time: 5h
+      department: OutpostCargo
+      time: 10h
   icon: "JobIconOutpostShaftMiner"
   supervisors: job-supervisors-outpost-qm-hop
   access:

@@ -1,0 +1,37 @@
+- type: job
+  id: OutpostClown
+  name: job-name-clown
+  description: job-outpost-description-clown
+  playTimeTracker: OutpostJobClown
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10h
+  icon: "JobIconOutpostClown"
+  supervisors: job-supervisors-outpost-honk
+  access:
+    - Service
+    - Clown
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: Clumsy
+      gunShootFailDamage:
+        types:
+          Blunt: 5
+          Piercing: 4
+          Heat: 3
+      catchingFailDamage:
+        types:
+          Blunt: 1
+    - type: SleepEmitSound
+      snore: /Audio/Voice/Misc/silly_snore.ogg
+      interval: 10
+      chance: 1.0
+    - type: NpcFactionMember
+      factions:
+      - HonkNeutral
+  - !type:AddImplantSpecial
+    implants: [ SadTromboneImplant ]
+  ranks:
+    RankCivilian: []
+  setPreference: true

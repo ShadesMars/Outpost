@@ -58,6 +58,7 @@
   weight: 3
   roles:
   - OutpostResearchDirector
+  - OutpostXenobiologist
   - OutpostScientist
 
 - type: department
@@ -68,6 +69,7 @@
   weight: 2
   roles:
   - OutpostQuartermaster
+  - OutpostExplorer
   - OutpostShaftMiner
   - OutpostCargoTechnician
 
@@ -84,6 +86,8 @@
   - OutpostBartender
   - OutpostRadioHost
   - OutpostJanitor
+  - OutpostClown
+  - OutpostMime
   - OutpostVisitor
 
 - type: department

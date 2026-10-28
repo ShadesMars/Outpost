@@ -99,6 +99,18 @@
         },
         {
             "name": "Borg"
+        },
+        {
+            "name": "Xenobiologist"
+        },
+        {
+            "name": "Clown"
+        },
+        {
+            "name": "Mime"
+        },
+        {
+            "name": "Explorer"
         }
     ]
 }

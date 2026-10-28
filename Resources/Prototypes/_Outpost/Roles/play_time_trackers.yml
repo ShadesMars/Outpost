@@ -82,3 +82,15 @@
 
 - type: playTimeTracker
   id: OutpostJobBorg
+
+- type: playTimeTracker
+  id: OutpostJobXenobiologist
+
+- type: playTimeTracker
+  id: OutpostJobClown
+
+- type: playTimeTracker
+  id: OutpostJobMime
+
+- type: playTimeTracker
+  id: OutpostJobExplorer

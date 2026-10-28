@@ -315,3 +315,47 @@
   tags:
   - JobIconCrew
   allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostXenobiologist
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Xenobiologist
+  jobName: job-name-xenobiologist
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostClown
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Clown
+  jobName: job-name-clown
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostMime
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Mime
+  jobName: job-name-mime
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostExplorer
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Explorer
+  jobName: job-name-explorer
+  tags:
+  - JobIconCrew
+  allowSelection: true

@@ -1,0 +1,42 @@
+- type: job
+  id: OutpostExplorer
+  name: job-name-explorer
+  description: job-outpost-description-explorer
+  playTimeTracker: OutpostJobExplorer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostCargo
+      time: 10h
+  icon: "JobIconOutpostExplorer"
+  supervisors: job-supervisors-outpost-qm-hop
+  access:
+  - Cargo
+  - External
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobExplorer
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobExplorer
+        time: 50h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobExplorer
+        time: 30h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobExplorer
+        time: 20h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobExplorer
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobExplorer
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true
