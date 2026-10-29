@@ -7,3 +7,99 @@
 
 - type: playTimeTracker
   id: OutpostJobHeadOfPersonnel
+
+- type: playTimeTracker
+  id: OutpostJobQuartermaster
+
+- type: playTimeTracker
+  id: OutpostJobCargoTechnician
+
+- type: playTimeTracker
+  id: OutpostJobShaftMiner
+
+- type: playTimeTracker
+  id: OutpostJobHeadOfSecurity
+
+- type: playTimeTracker
+  id: OutpostJobWarden
+
+- type: playTimeTracker
+  id: OutpostJobSecurityOfficer
+
+- type: playTimeTracker
+  id: OutpostJobStowaway
+
+- type: playTimeTracker
+  id: OutpostJobBartender
+
+- type: playTimeTracker
+  id: OutpostJobChaplain
+
+- type: playTimeTracker
+  id: OutpostJobChef
+
+- type: playTimeTracker
+  id: JobIconOutpostBotanist
+
+- type: playTimeTracker
+  id: OutpostJobJanitor
+
+- type: playTimeTracker
+  id: OutpostJobIAA
+
+- type: playTimeTracker
+  id: OutpostJobRadioHost
+
+- type: playTimeTracker
+  id: OutpostJobChiefEngineer
+
+- type: playTimeTracker
+  id: OutpostJobEngineer
+
+- type: playTimeTracker
+  id: OutpostJobRoboticist
+
+- type: playTimeTracker
+  id: OutpostJobResearchDirector
+
+- type: playTimeTracker
+  id: OutpostJobScientist
+
+- type: playTimeTracker
+  id: OutpostJobChiefMedicalOfficer
+
+- type: playTimeTracker
+  id: OutpostJobDoctor
+
+- type: playTimeTracker
+  id: OutpostJobChemist
+
+- type: playTimeTracker
+  id: OutpostJobParamedic
+
+- type: playTimeTracker
+  id: OutpostJobStationAi
+
+- type: playTimeTracker
+  id: OutpostJobBorg
+
+- type: playTimeTracker
+  id: OutpostJobXenobiologist
+
+- type: playTimeTracker
+  id: OutpostJobClown
+
+- type: playTimeTracker
+  id: OutpostJobMime
+
+- type: playTimeTracker
+  id: OutpostJobExplorer
+
+- type: playTimeTracker
+  id: OutpostJobBotanist
+
+- type: playTimeTracker
+  id: OutpostQuartermaster
+
+- type: playTimeTracker
+  id: OutpostJobPsychiatrist

@@ -1,0 +1,7 @@
+- type: !PartialOnly accessGroup
+  id: Engineering
+  tags:
+  - ChiefEngineer
+  - Engineering
+  - Atmospherics
+  - Robotics

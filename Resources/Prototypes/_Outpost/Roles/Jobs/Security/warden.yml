@@ -1,0 +1,27 @@
+- type: job
+  id: OutpostWarden
+  name: job-name-warden
+  description: job-outpost-description-warden
+  playTimeTracker: OutpostJobWarden
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostSecurity
+      time: 20h
+  icon: "JobIconOutpostWarden"
+  supervisors: job-supervisors-hos
+  access:
+  - Armory
+  - Security
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  displayWeight: 1
+  ranks:
+    RankChiefWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobWarden
+        time: 70h
+    RankWarrantOfficer: []
+  setPreference: true
+  setRankPreference: true

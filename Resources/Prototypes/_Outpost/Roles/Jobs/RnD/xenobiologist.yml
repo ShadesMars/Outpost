@@ -1,0 +1,25 @@
+- type: job
+  id: OutpostXenobiologist
+  name: job-name-xenobiologist
+  description: job-outpost-description-xenobiologist
+  playTimeTracker: OutpostJobXenobiologist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostRnD
+      time: 10h
+  icon: "JobIconOutpostXenobiologist"
+  supervisors: job-supervisors-rd
+  access:
+  - Research
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobXenobiologist
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobXenobiologist
+        time: 10h
+    RankSergeant: []
+  setPreference: true
+  setRankPreference: true

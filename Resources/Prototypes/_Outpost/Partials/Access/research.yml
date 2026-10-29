@@ -1,0 +1,5 @@
+- type: !PartialOnly accessGroup
+  id: Research
+  tags:
+  - ResearchDirector
+  - Research

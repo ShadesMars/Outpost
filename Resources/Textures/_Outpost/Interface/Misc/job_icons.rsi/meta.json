@@ -1,0 +1,119 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from: https://github.com/ParadiseSS13/Paradise",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "SiteDirector"
+        },
+        {
+            "name": "Unknown"
+        },
+        {
+            "name": "NoId"
+        },
+        {
+            "name": "Visitor"
+        },
+        {
+            "name": "HeadofPersonnel"
+        },
+        {
+            "name": "CargoTech"
+        },
+        {
+            "name": "HeadofSecurity"
+        },
+        {
+            "name": "Quartermaster"
+        },
+        {
+            "name": "SecurityOfficer"
+        },
+        {
+            "name": "ShaftMiner"
+        },
+        {
+            "name": "Warden"
+        },
+        {
+            "name": "Bartender"
+        },
+        {
+            "name": "Chaplain"
+        },
+        {
+            "name": "Chef"
+        },
+        {
+            "name": "Botanist"
+        },
+        {
+            "name": "Janitor"
+        },
+        {
+            "name": "Librarian"
+        },
+        {
+            "name": "IAA"
+        },
+        {
+            "name": "RadioHost"
+        },
+        {
+            "name": "ChiefEngineer"
+        },
+        {
+            "name": "Engineer"
+        },
+        {
+            "name": "Roboticist"
+        },
+        {
+            "name": "ResearchDirector"
+        },
+        {
+            "name": "Scientist"
+        },
+        {
+            "name": "ChiefMedicalOfficer"
+        },
+        {
+            "name": "Doctor"
+        },
+        {
+            "name": "Chemist"
+        },
+        {
+            "name": "Paramedic"
+        },
+        {
+            "name": "Psychiatrist"
+        },
+        {
+            "name": "StationAi"
+        },
+        {
+            "name": "Borg"
+        },
+        {
+            "name": "Xenobiologist"
+        },
+        {
+            "name": "Clown"
+        },
+        {
+            "name": "Mime"
+        },
+        {
+            "name": "Explorer"
+        },
+        {
+            "name": "Prisoner"
+        }
+    ]
+}

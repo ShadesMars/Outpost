@@ -1,0 +1,43 @@
+- type: job
+  id: OutpostShaftMiner
+  name: job-name-shaftminer
+  description: job-outpost-description-shaftminer
+  playTimeTracker: OutpostJobShaftMiner
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostCargo
+      time: 10h
+  icon: "JobIconOutpostShaftMiner"
+  supervisors: job-supervisors-outpost-qm-hop
+  access:
+  - Cargo
+  - Mining
+  - External
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobShaftMiner
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobShaftMiner
+        time: 50h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobShaftMiner
+        time: 30h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobShaftMiner
+        time: 20h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobShaftMiner
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobShaftMiner
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true

@@ -1,0 +1,40 @@
+- type: job
+  id: OutpostDoctor
+  name: job-name-doctor
+  description: job-outpost-description-doctor
+  playTimeTracker: OutpostJobDoctor
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10h
+  icon: "JobIconOutpostDoctor"
+  supervisors: job-supervisors-cmo
+  access:
+  - Medical
+  ranks:
+    RankWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobDoctor
+        time: 70h
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobDoctor
+        time: 50h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobDoctor
+        time: 30h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobDoctor
+        time: 20h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobDoctor
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobDoctor
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true

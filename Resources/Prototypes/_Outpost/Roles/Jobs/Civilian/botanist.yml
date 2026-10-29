@@ -1,0 +1,38 @@
+- type: job
+  id: OutpostBotanist
+  name: job-name-botanist
+  description: job-outpost-description-botanist
+  playTimeTracker: OutpostJobBotanist
+  icon: "JobIconOutpostBotanist"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Hydroponics
+  ranks:
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: JobIconOutpostBotanist
+        time: 70h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: JobIconOutpostBotanist
+        time: 50h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: JobIconOutpostBotanist
+        time: 30h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: JobIconOutpostBotanist
+        time: 20h
+    RankPrivate:
+      - !type:RoleTimeRequirement
+        role: JobIconOutpostBotanist
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: JobIconOutpostBotanist
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true

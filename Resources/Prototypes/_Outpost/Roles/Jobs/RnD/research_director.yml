@@ -1,0 +1,33 @@
+- type: job
+  id: OutpostResearchDirector
+  name: job-name-rd
+  description: job-outpost-description-rd
+  playTimeTracker: OutpostJobResearchDirector
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: OutpostRnD
+      time: 20h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
+  icon: "JobIconOutpostResearchDirector"
+  supervisors: job-supervisors-outpost-sitedirector
+  access:
+  - External
+  - Command
+  - Research
+  - ResearchDirector
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+  displayWeight: 2
+  ranks:
+    RankFirstLieutenant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobResearchDirector
+        time: 70h
+    RankSecondLieutenant: []
+  setPreference: true
+  setRankPreference: true

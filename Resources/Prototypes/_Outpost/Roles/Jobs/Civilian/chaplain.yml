@@ -1,0 +1,42 @@
+- type: job
+  id: OutpostChaplain
+  name: job-name-chaplain
+  description: job-outpost-description-chaplain
+  playTimeTracker: OutpostJobChaplain
+  icon: "JobIconOutpostChaplain"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Chapel
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: BibleUser
+  ranks:
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChaplain
+        time: 70h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChaplain
+        time: 50h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChaplain
+        time: 30h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChaplain
+        time: 20h
+    RankPrivate:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChaplain
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChaplain
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true

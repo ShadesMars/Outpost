@@ -2,28 +2,104 @@
   id: OutpostCommand
   name: department-Command
   description: department-Command-description
-  color: "#3333FF"
+  color: "#0070B7"
   weight: 10
   roles:
   - OutpostSiteDirector
   - OutpostHeadOfPersonnel
+  - OutpostHeadOfSecurity
+  - OutpostChiefEngineer
+  - OutpostResearchDirector
+  - OutpostChiefMedicalOfficer
+  - OutpostQuartermaster
+  - OutpostIAA
   primary: false
+
+- type: department
+  id: OutpostSecurity
+  name: department-Security
+  description: department-Security-description
+  color: "#B03F30"
+  weight: 6
+  roles:
+  - OutpostHeadOfSecurity
+  - OutpostWarden
+  - OutpostSecurityOfficer
+
+- type: department
+  id: OutpostEngineering
+  name: department-Engineering
+  description: department-Engineering-description
+  color: "#DE742D"
+  weight: 5
+  roles:
+  - OutpostChiefEngineer
+  - OutpostRoboticist
+  - OutpostEngineer
+
+- type: department
+  id: OutpostMedical
+  name: department-Medical
+  description: department-Medical-description
+  color: "#75B9E0"
+  weight: 4
+  roles:
+  - OutpostChiefMedicalOfficer
+  - OutpostParamedic
+  - OutpostChemist
+  - OutpostPsychiatrist
+  - OutpostDoctor
+
+- type: department
+  id: OutpostRnD
+  name: department-RnD
+  description: department-Science-description
+  color: "#885CA0"
+  weight: 3
+  roles:
+  - OutpostResearchDirector
+  - OutpostXenobiologist
+  - OutpostScientist
 
 - type: department
   id: OutpostCargo
   name: department-Cargo
   description: department-Cargo-description
-  color: "#BB9040"
+  color: "#7B4E23"
   weight: 2
   roles:
-  - OutpostHeadOfPersonnel
+  - OutpostQuartermaster
+  - OutpostExplorer
+  - OutpostShaftMiner
+  - OutpostCargoTechnician
 
 - type: department
   id: OutpostCivilian
   name: department-Civilian
   description: department-Civilian-description
-  color: "#A32800"
+  color: "#3B8851"
   weight: 1
   roles:
   - OutpostHeadOfPersonnel
+  - OutpostChaplain
+  - OutpostChef
+  - OutpostBartender
+  - OutpostRadioHost
+  - OutpostJanitor
+  - OutpostClown
+  - OutpostMime
   - OutpostVisitor
+
+- type: department
+  id: OutpostMiscellaneous
+  name: department-Miscellaneous
+  description: department-Miscellaneous-description
+  color: "#666666"
+  weight: -5
+  roles:
+  - OutpostStationAi
+  - OutpostBorg
+  - OutpostIAA
+  - OutpostVisitor
+  - OutpostStowaway
+  primary: false

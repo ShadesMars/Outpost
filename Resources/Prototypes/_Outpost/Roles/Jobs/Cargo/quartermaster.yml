@@ -1,0 +1,38 @@
+- type: job
+  id: OutpostQuartermaster
+  name: job-name-qm
+  description: job-outpost-description-qm
+  playTimeTracker: OutpostJobQuartermaster
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 20h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
+  icon: "JobIconOutpostQuartermaster"
+  supervisors: job-supervisors-hop
+  access:
+  - Cargo
+  - Mining
+  - Quartermaster
+  - Command
+  - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+  displayWeight: 1
+  ranks:
+    RankSecondLieutenant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobQuartermaster
+        time: 70h
+    RankChiefWarrantOfficer:
+      - !type:RoleTimeRequirement
+        role: OutpostJobQuartermaster
+        time: 10h
+    RankWarrantOfficer: []
+  setPreference: true
+  setRankPreference: true

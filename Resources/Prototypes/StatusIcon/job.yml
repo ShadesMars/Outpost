@@ -4,6 +4,7 @@
   priority: 1
   locationPreference: Right
   isShaded: true
+  allowSelection: false
 
 # Cargo
 

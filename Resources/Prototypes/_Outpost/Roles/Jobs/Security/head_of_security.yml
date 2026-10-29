@@ -1,0 +1,34 @@
+- type: job
+  id: OutpostHeadOfSecurity
+  name: job-name-hos
+  description: job-outpost-description-hos
+  playTimeTracker: OutpostJobHeadOfSecurity
+  requirements:
+    - !type:RoleTimeRequirement
+      role: OutpostJobWarden
+      time: 10h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
+  icon: "JobIconOutpostHeadofSecurity"
+  supervisors: job-supervisors-outpost-sitedirector
+  access:
+  - Armory
+  - Security
+  - External
+  - HeadOfSecurity
+  - Command
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+  displayWeight: 2
+  ranks:
+    RankFirstLieutenant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobHeadOfSecurity
+        time: 70h
+    RankSecondLieutenant: []
+  setPreference: true
+  setRankPreference: true

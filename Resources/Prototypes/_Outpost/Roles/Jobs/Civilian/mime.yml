@@ -1,0 +1,22 @@
+- type: job
+  id: OutpostMime
+  name: job-name-mime
+  description: job-outpost-description-mime
+  playTimeTracker: OutpostJobMime
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10h
+  icon: "JobIconOutpostMime"
+  supervisors: job-supervisors-outpost-silence
+  access:
+    - Service
+    - Mime
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: MimePowers
+      preventWriting: true
+    - type: FrenchAccent
+  ranks:
+    RankCivilian: []
+  setPreference: true

@@ -1,4 +1,4 @@
-# Misc
+# Miscs
 - type: rank
   id: RankCivilian
   name: Civilian
@@ -20,7 +20,7 @@
   paygrade: E2
 
 - type: rank
-  id: RankLanceCorporal
+  id: RankCorporal
   name: Corporal
   paygrade: E3
 
@@ -34,29 +34,14 @@
   name: Staff Sergeant
   paygrade: E5
 
-- type: rank
-  id: RankSergeantFirstClass
-  name: Sergeant First Class
-  paygrade: E6
-
-- type: rank
-  id: RankMasterSergeant
-  name: Master Sergeant
-  paygrade: E7
-
-- type: rank
-  id: RankSergeantMajor
-  name: Sergeant Major
-  paygrade: E8
-
 # Warrant officers
 - type: rank
-  id: RMCRankWarrantOfficer
+  id: RankWarrantOfficer
   name: Warrant Officer
   paygrade: WO-1
 
 - type: rank
-  id: RMCRankChiefWarrantOfficer
+  id: RankChiefWarrantOfficer
   name: Chief Warrant Officer
   paygrade: WO-2
 

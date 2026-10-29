@@ -7,23 +7,39 @@
     - !type:DepartmentTimeRequirement
       department: OutpostCivilian
       time: 20h
-  icon: "JobIconHeadOfPersonnel"
+    - !type:RoleTimeRequirement
+      role: OutpostQuartermaster
+      time: 5h
+    - !type:OverallPlaytimeRequirement
+      time: 40h
+  icon: "JobIconOutpostHeadofPersonnel"
   supervisors: job-supervisors-outpost-sitedirector
   access:
     - Command
     - HeadOfPersonnel
+    - Bar
+    - Service
+    - Janitor
+    - Kitchen
+    - Chapel
+    - Hydroponics
+    - Cargo
+    - Mining
+    - Quartermaster
+    - External
+    - Journalism
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]
     - !type:AddComponentSpecial
       components:
         - type: CommandStaff
-  displayWeight: 2
+  displayWeight: 3
   ranks:
     RankCaptain:
       - !type:RoleTimeRequirement
         role: OutpostJobHeadOfPersonnel
-        time: 60h
+        time: 70h
     RankFirstLieutenant: []
   setPreference: true
   setRankPreference: true

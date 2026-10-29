@@ -1,0 +1,47 @@
+- type: !PartialOnly jobIcon
+  parent: JobIcon
+  id: JobIconNoId
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: NoId
+  allowSelection: true
+
+- type: !PartialOnly jobIcon
+  id: JobIconUnknown
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Unknown
+  allowSelection: true
+
+- type: !PartialOnly jobIcon
+  id: JobIconTSF
+  allowSelection: true
+
+- type: !PartialOnly jobIcon
+  id: JobIconSoviet
+  allowSelection: true
+
+- type: !PartialOnly jobIcon
+  id: JobIconTSFOfficer
+  allowSelection: true
+
+- type: !PartialOnly jobIcon
+  id: JobIconMakeshiftID
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Unknown
+
+- type: !PartialOnly jobIcon
+  id: JobIconStationAi
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: StationAi
+  allowSelection: true
+
+- type: !PartialOnly jobIcon
+  parent: JobIcon
+  id: JobIconBorg
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Borg
+  allowSelection: true

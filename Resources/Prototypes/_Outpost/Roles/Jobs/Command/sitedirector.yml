@@ -4,7 +4,7 @@
   description: job-description-sitedirector
   playTimeTracker: OutpostJobSiteDirector
   whitelisted: true
-  icon: "JobIconCaptain"
+  icon: "JobIconOutpostSiteDirector"
   joinNotifyCrew: true
   supervisors: job-supervisors-outpost-company
   accessGroups:
@@ -15,12 +15,12 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-  displayWeight: 3
+  displayWeight: 4
   ranks:
     RankMajor:
     - !type:RoleTimeRequirement
       role: OutpostJobSiteDirector
-      time: 60h
+      time: 70h
     RankCaptain: []
   setPreference: true
   setRankPreference: true

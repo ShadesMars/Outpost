@@ -1,0 +1,351 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostSiteDirector
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: SiteDirector
+  jobName: job-name-sitedirector
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostVisitor
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Visitor
+  jobName: job-name-visitor
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostCargoTechnician
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: CargoTech
+  jobName: job-name-cargotech
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostQuartermaster
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Quartermaster
+  jobName: job-name-qm
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostShaftMiner
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: ShaftMiner
+  jobName: job-name-shaftminer
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostHeadofPersonnel
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: HeadofPersonnel
+  jobName: job-name-hop
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostHeadofSecurity
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: HeadofSecurity
+  jobName: job-name-hos
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostSecurityOfficer
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: SecurityOfficer
+  jobName: job-name-security
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostWarden
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Warden
+  jobName: job-name-warden
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostBartender
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Bartender
+  jobName: job-name-bartender
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostChaplain
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Chaplain
+  jobName: job-name-chaplain
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostChef
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Chef
+  jobName: job-name-chef
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostBotanist
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Botanist
+  jobName: job-name-botanist
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostJanitor
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Janitor
+  jobName: job-name-janitor
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostPrisoner
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Prisoner
+  jobName: job-name-prisoner
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostLibrarian
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Librarian
+  jobName: job-name-librarian
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostIAA
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: IAA
+  jobName: job-name-iaa
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostRadioHost
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: RadioHost
+  jobName: job-name-radiohost
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostChiefEngineer
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: ChiefEngineer
+  jobName: job-name-ce
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostEngineer
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Engineer
+  jobName: job-name-engineer
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostRoboticist
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Roboticist
+  jobName: job-name-roboticist
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostResearchDirector
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: ResearchDirector
+  jobName: job-name-rd
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostScientist
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Scientist
+  jobName: job-name-scientist
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostChiefMedicalOfficer
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: ChiefMedicalOfficer
+  jobName: job-name-cmo
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostDoctor
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Doctor
+  jobName: job-name-doctor
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostChemist
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Chemist
+  jobName: job-name-chemist
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostParamedic
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Paramedic
+  jobName: job-name-paramedic
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostPsychiatrist
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Psychiatrist
+  jobName: job-name-psychiatrist
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostXenobiologist
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Xenobiologist
+  jobName: job-name-xenobiologist
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostClown
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Clown
+  jobName: job-name-clown
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostMime
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Mime
+  jobName: job-name-mime
+  tags:
+  - JobIconCrew
+  allowSelection: true
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOutpostExplorer
+  icon:
+    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
+    state: Explorer
+  jobName: job-name-explorer
+  tags:
+  - JobIconCrew
+  allowSelection: true

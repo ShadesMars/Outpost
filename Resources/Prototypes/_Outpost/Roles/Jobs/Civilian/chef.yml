@@ -1,0 +1,38 @@
+- type: job
+  id: OutpostChef
+  name: job-name-chef
+  description: job-outpost-description-chef
+  playTimeTracker: OutpostJobChef
+  icon: "JobIconOutpostChef"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Kitchen
+  ranks:
+    RankStaffSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChef
+        time: 70h
+    RankSergeant:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChef
+        time: 50h
+    RankCorporal:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChef
+        time: 30h
+    RankPrivateFirstClass:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChef
+        time: 20h
+    RankPrivate:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChef
+        time: 10h
+    RankRecruit:
+      - !type:RoleTimeRequirement
+        role: OutpostJobChef
+        time: 10h
+        inverted: true
+  setPreference: true
+  setRankPreference: true
