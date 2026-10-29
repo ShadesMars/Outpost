@@ -111,6 +111,9 @@
         },
         {
             "name": "Explorer"
+        },
+        {
+            "name": "Prisoner"
         }
     ]
 }
