@@ -1,5 +1,4 @@
 - type: !PartialOnly jobIcon
-  parent: JobIcon
   id: JobIconNoId
   icon:
     sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
@@ -39,7 +38,6 @@
   allowSelection: true
 
 - type: !PartialOnly jobIcon
-  parent: JobIcon
   id: JobIconBorg
   icon:
     sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
