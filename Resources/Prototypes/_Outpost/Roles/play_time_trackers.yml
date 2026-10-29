@@ -100,3 +100,6 @@
 
 - type: playTimeTracker
   id: OutpostQuartermaster
+
+- type: playTimeTracker
+  id: OutpostJobPsychiatrist
