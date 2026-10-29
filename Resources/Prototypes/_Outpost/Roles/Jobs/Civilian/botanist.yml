@@ -4,7 +4,7 @@
   description: job-outpost-description-botanist
   playTimeTracker: OutpostJobBotanist
   icon: "JobIconOutpostBotanist"
-  supervisors: job-supervisors-outpost-hop
+  supervisors: job-supervisors-hop
   access:
   - Service
   - Hydroponics

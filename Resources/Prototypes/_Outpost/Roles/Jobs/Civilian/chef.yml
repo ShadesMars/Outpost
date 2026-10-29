@@ -4,7 +4,7 @@
   description: job-outpost-description-chef
   playTimeTracker: OutpostJobChef
   icon: "JobIconOutpostChef"
-  supervisors: job-supervisors-outpost-hop
+  supervisors: job-supervisors-hop
   access:
   - Service
   - Kitchen

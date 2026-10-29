@@ -10,7 +10,7 @@
     - !type:OverallPlaytimeRequirement
       time: 40h
   icon: "JobIconOutpostQuartermaster"
-  supervisors: job-supervisors-outpost-hop
+  supervisors: job-supervisors-hop
   access:
   - Cargo
   - Mining

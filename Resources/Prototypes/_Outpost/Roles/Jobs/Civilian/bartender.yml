@@ -4,7 +4,7 @@
   description: job-outpost-description-bartender
   playTimeTracker: OutpostJobBartender
   icon: "JobIconOutpostBartender"
-  supervisors: job-supervisors-outpost-hop
+  supervisors: job-supervisors-hop
   access:
   - Service
   - Bar

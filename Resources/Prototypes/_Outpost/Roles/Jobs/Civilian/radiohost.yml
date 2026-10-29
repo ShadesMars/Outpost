@@ -4,7 +4,7 @@
   description: job-outpost-description-radiohost
   playTimeTracker: OutpostJobRadioHost
   icon: "JobIconOutpostRadioHost"
-  supervisors: job-supervisors-outpost-hop
+  supervisors: job-supervisors-hop
   access:
     - Service
     - Journalism

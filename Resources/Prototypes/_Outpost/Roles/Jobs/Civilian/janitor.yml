@@ -4,7 +4,7 @@
   description: job-outpost-description-janitor
   playTimeTracker: OutpostJobJanitor
   icon: "JobIconOutpostJanitor"
-  supervisors: job-supervisors-outpost-hop
+  supervisors: job-supervisors-hop
   access:
   - Service
   - Janitor
