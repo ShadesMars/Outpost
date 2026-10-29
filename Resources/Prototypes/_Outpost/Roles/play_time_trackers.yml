@@ -94,3 +94,9 @@
 
 - type: playTimeTracker
   id: OutpostJobExplorer
+
+- type: playTimeTracker
+  id: OutpostJobBotanist
+
+- type: playTimeTracker
+  id: OutpostQuartermaster

@@ -53,7 +53,7 @@
 - type: department
   id: OutpostRnD
   name: department-RnD
-  description: department-science-description
+  description: department-Science-description
   color: "#885CA0"
   weight: 3
   roles:

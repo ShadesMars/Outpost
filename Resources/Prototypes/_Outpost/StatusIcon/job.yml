@@ -294,16 +294,6 @@
   tags:
   - JobIconCrew
   allowSelection: true
-- type: jobIcon
-  parent: JobIcon
-  id: JobIconOutpostParamedic
-  icon:
-    sprite: /Textures/_Outpost/Interface/Misc/job_icons.rsi
-    state: Paramedic
-  jobName: job-name-paramedic
-  tags:
-  - JobIconCrew
-  allowSelection: true
 
 - type: jobIcon
   parent: JobIcon
